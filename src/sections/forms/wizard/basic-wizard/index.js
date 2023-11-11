@@ -3,12 +3,16 @@ import { useState } from 'react';
 // material-ui
 import { Button, Step, Stepper, StepLabel, Stack, Typography } from '@mui/material';
 
-// project imports
-import AddressForm from './AddressForm';
-import PaymentForm from './PaymentForm';
-import Review from './Review';
 import MainCard from 'components/MainCard';
 import AnimateButton from 'components/@extended/AnimateButton';
+// project imports
+import AceesComarch from './AceesComarch';
+import ScharcUser from './ScharcUser';
+import User from './User';
+import AlterandoPass from './AlterandoPass';
+import Reset from './Reset';
+import AcessLogin from './AcessLogin';
+import Confirmando from './Confirm';
 
 // step options
 const steps = [
@@ -24,21 +28,19 @@ const steps = [
 function getStepContent(step) {
   switch (step) {
     case 0:
-      return <AddressForm />;
+      return <AceesComarch />;
     case 1:
-      return <PaymentForm />;
+      return <ScharcUser />;
     case 2:
-      return <Review />;
+      return <User />;
     case 3:
-      return <Review />;
+      return <AlterandoPass />;
     case 4:
-      return <Review />;
+      return <Reset />;
     case 5:
-      return <Review />;
+      return <AcessLogin />;
     case 6:
-      return <Review />;
-    case 7:
-      return <Review />;
+      return <Confirmando />;
     default:
       throw new Error('Unknown step');
   }
