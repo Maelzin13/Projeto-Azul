@@ -27,10 +27,11 @@ export default function AceesComarch() {
         >
           <Image
             src={comarch}
-            alt="mantis"
+            alt="login"
             layout="fixed"
             width={matchDownSM ? 350 : 365}
             height={matchDownSM ? 325 : 370}
+            quality={85} // Ajuste a qualidade conforme necessário
             style={{
               objectFit: 'cover',
               borderRadius: '25px'
