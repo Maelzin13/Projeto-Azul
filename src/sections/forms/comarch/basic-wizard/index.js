@@ -89,7 +89,7 @@ const Comarch = () => {
             <Stack direction="row" justifyContent="flex-end">
               <AnimateButton>
                 <Button variant="contained" color="error" onClick={() => setActiveStep(0)} sx={{ my: 3, ml: 1 }}>
-                  Reset
+                  Inicio do Procedimento
                 </Button>
               </AnimateButton>
             </Stack>
