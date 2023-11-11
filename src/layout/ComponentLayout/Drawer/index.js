@@ -34,7 +34,7 @@ const Drawer = ({ handleDrawerOpen, open }) => {
         position: { xs: 'fixed', md: 'sticky' },
         top: { xs: 0, md: 84, xl: 90 },
         height: { xs: 'auto', md: 'calc(100vh - 140px)', xl: 'calc(100vh - 176px)' },
-        zIndex: { xs: open ? 1200 : -1, md: 0 },
+        zIndex: { xs: 1200, md: 0 },
         '& .MuiDrawer-paper': {
           position: 'relative',
           border: 'none'

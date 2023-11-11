@@ -3,10 +3,10 @@ import { styled } from '@mui/material/styles';
 import Drawer from '@mui/material/Drawer';
 
 // project import
-import { drawerWidth, ThemeMode } from 'config';
+import { DRAWER_WIDTH, ThemeMode } from 'config';
 
 const openedMixin = (theme) => ({
-  width: drawerWidth,
+  width: DRAWER_WIDTH,
   borderRight: `1px solid ${theme.palette.divider}`,
   transition: theme.transitions.create('width', {
     easing: theme.transitions.easing.sharp,
@@ -30,7 +30,7 @@ const closedMixin = (theme) => ({
 // ==============================|| DRAWER - MINI STYLED ||============================== //
 
 const MiniDrawerStyled = styled(Drawer, { shouldForwardProp: (prop) => prop !== 'open' })(({ theme, open }) => ({
-  width: drawerWidth,
+  width: DRAWER_WIDTH,
   flexShrink: 0,
   whiteSpace: 'nowrap',
   boxSizing: 'border-box',

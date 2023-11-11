@@ -12,10 +12,9 @@ import { Avatar, Chip, Link, ListItemButton, ListItemIcon, ListItemText, Typogra
 // project import
 import Dot from 'components/@extended/Dot';
 import useConfig from 'hooks/useConfig';
-
-import { MenuOrientation, ThemeMode } from 'config';
 import { dispatch, useSelector } from 'store';
 import { activeItem, openDrawer } from 'store/reducers/menu';
+import { MenuOrientation, ThemeMode } from 'config';
 
 // ==============================|| NAVIGATION - LIST ITEM ||============================== //
 

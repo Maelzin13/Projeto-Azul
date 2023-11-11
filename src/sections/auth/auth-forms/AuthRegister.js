@@ -29,7 +29,7 @@ import { Formik } from 'formik';
 
 // project import
 import FirebaseSocial from './FirebaseSocial';
-import { DEFAULT_PATH } from 'config';
+import { APP_DEFAULT_PATH } from 'config';
 import IconButton from 'components/@extended/IconButton';
 import AnimateButton from 'components/@extended/AnimateButton';
 import { strengthColor, strengthIndicator } from 'utils/password-strength';
@@ -85,7 +85,7 @@ const AuthRegister = ({ providers, csrfToken }) => {
             name: values.name,
             email: values.email,
             password: values.password,
-            callbackUrl: DEFAULT_PATH
+            callbackUrl: APP_DEFAULT_PATH
           }).then((res) => {
             if (res?.error) {
               setErrors({ submit: res.error });
@@ -240,7 +240,7 @@ const AuthRegister = ({ providers, csrfToken }) => {
                     color="secondary"
                     fullWidth={!matchDownSM}
                     startIcon={<Image src={Google} alt="Twitter" width={16} height={16} />}
-                    onClick={() => signIn(provider.id, { callbackUrl: DEFAULT_PATH })}
+                    onClick={() => signIn(provider.id, { callbackUrl: APP_DEFAULT_PATH })}
                   >
                     {!matchDownSM && 'Google'}
                   </Button>
@@ -251,7 +251,7 @@ const AuthRegister = ({ providers, csrfToken }) => {
                     color="secondary"
                     fullWidth={!matchDownSM}
                     startIcon={<Image src={Auth0} alt="Twitter" width={16} height={16} />}
-                    onClick={() => signIn(provider.id, { callbackUrl: DEFAULT_PATH })}
+                    onClick={() => signIn(provider.id, { callbackUrl: APP_DEFAULT_PATH })}
                   >
                     {!matchDownSM && 'Auth0'}
                   </Button>
@@ -262,7 +262,7 @@ const AuthRegister = ({ providers, csrfToken }) => {
                     color="secondary"
                     fullWidth={!matchDownSM}
                     startIcon={<Image src={Cognito} alt="Twitter" width={16} height={16} />}
-                    onClick={() => signIn(provider.id, { callbackUrl: DEFAULT_PATH })}
+                    onClick={() => signIn(provider.id, { callbackUrl: APP_DEFAULT_PATH })}
                   >
                     {!matchDownSM && 'Cognito'}
                   </Button>

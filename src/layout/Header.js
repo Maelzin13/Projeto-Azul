@@ -28,7 +28,7 @@ import {
 } from '@mui/material';
 
 // project import
-import { DEFAULT_PATH, ThemeMode } from 'config';
+import { APP_DEFAULT_PATH, ThemeMode } from 'config';
 import IconButton from 'components/@extended/IconButton';
 
 import AnimateButton from 'components/@extended/AnimateButton';
@@ -83,13 +83,6 @@ const Header = ({ handleDrawerOpen, layout = 'landing', ...others }) => {
               <Typography component="div" sx={{ textAlign: 'left', display: 'inline-block' }}>
                 <Logo reverse to="/" />
               </Typography>
-              <Chip
-                label={process.env.REACT_APP_VERSION}
-                variant="outlined"
-                size="small"
-                color="secondary"
-                sx={{ mt: 0.5, ml: 1, fontSize: '0.725rem', height: 20, '& .MuiChip-label': { px: 0.5 } }}
-              />
             </Stack>
             <Stack
               direction="row"
@@ -100,7 +93,7 @@ const Header = ({ handleDrawerOpen, layout = 'landing', ...others }) => {
               spacing={2}
             >
               {session ? (
-                <NextLink href={DEFAULT_PATH} passHref legacyBehavior>
+                <NextLink href={APP_DEFAULT_PATH} passHref legacyBehavior>
                   <Link className="header-link" color="white" target="_blank" underline="none">
                     Dashboard
                   </Link>
@@ -112,11 +105,6 @@ const Header = ({ handleDrawerOpen, layout = 'landing', ...others }) => {
                   </Link>
                 </NextLink>
               )}
-              <NextLink href="/components-overview/buttons" passHref legacyBehavior>
-                <Link className="header-link" color={handleDrawerOpen ? 'primary' : 'white'} underline="none">
-                  Components
-                </Link>
-              </NextLink>
               <Link className="header-link" color="white" href="https://codedthemes.gitbook.io/mantis/" target="_blank" underline="none">
                 Documentation
               </Link>
@@ -147,7 +135,7 @@ const Header = ({ handleDrawerOpen, layout = 'landing', ...others }) => {
               </Typography>
               <Stack direction="row" spacing={2}>
                 {layout === 'component' && (
-                  <NextLink href={DEFAULT_PATH} passHref legacyBehavior>
+                  <NextLink href={APP_DEFAULT_PATH} passHref legacyBehavior>
                     <Button variant="outlined" size="small" color="warning" sx={{ mt: 0.5, height: 28 }}>
                       Dashboard
                     </Button>

@@ -29,7 +29,7 @@ import Dot from 'components/@extended/Dot';
 import IconButton from 'components/@extended/IconButton';
 import Transitions from 'components/@extended/Transitions';
 import AnimateButton from 'components/@extended/AnimateButton';
-import { drawerWidth, ThemeMode } from 'config';
+import { DRAWER_WIDTH, ThemeMode } from 'config';
 
 // assets
 import { ArrowRightOutlined, WindowsOutlined } from '@ant-design/icons';
@@ -98,8 +98,8 @@ const MegaMenuSection = () => {
                 minWidth: 750,
                 width: {
                   md: `calc(100vw - 100px)`,
-                  lg: `calc(100vw - ${drawerWidth + 100}px)`,
-                  xl: `calc(100vw - ${drawerWidth + 140}px)`
+                  lg: `calc(100vw - ${DRAWER_WIDTH + 100}px)`,
+                  xl: `calc(100vw - ${DRAWER_WIDTH + 140}px)`
                 },
                 maxWidth: 1024
               }}

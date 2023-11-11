@@ -7,7 +7,7 @@ import { Box, Typography } from '@mui/material';
 import NavGroup from './NavGroup';
 import menuItem from 'menu-items/components';
 
-// ==============================|| DRAWER - NAVIGATION ||============================== //
+// ==============================|| DRAWER CONTENT - NAVIGATION ||============================== //
 
 const Navigation = ({ searchValue }) => {
   let filteredMenuItems = [];

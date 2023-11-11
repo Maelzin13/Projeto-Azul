@@ -2,15 +2,30 @@ import PropTypes from 'prop-types';
 import { useRef, useState } from 'react';
 
 // next
+import { useRouter } from 'next/router';
 import { useSession, signOut } from 'next-auth/react';
 
 // material-ui
 import { useTheme } from '@mui/material/styles';
-import { Box, ButtonBase, CardContent, ClickAwayListener, Grid, Paper, Popper, Stack, Tab, Tabs, Tooltip, Typography } from '@mui/material';
+import {
+  Box,
+  ButtonBase,
+  capitalize,
+  CardContent,
+  ClickAwayListener,
+  Grid,
+  Paper,
+  Popper,
+  Stack,
+  Tab,
+  Tabs,
+  Tooltip,
+  Typography
+} from '@mui/material';
 
 // project import
-import ProfileTab from './ProfileTab';
 import SettingTab from './SettingTab';
+import ProfileTab from './ProfileTab';
 import Avatar from 'components/@extended/Avatar';
 import MainCard from 'components/MainCard';
 import Transitions from 'components/@extended/Transitions';
@@ -21,6 +36,8 @@ import useUser from 'hooks/useUser';
 
 // assets
 import { LogoutOutlined, SettingOutlined, UserOutlined } from '@ant-design/icons';
+
+const avatar1 = 'assets/images/users/avatar-1.png';
 
 // tab panel wrapper
 function TabPanel({ children, value, index, ...other }) {
@@ -49,6 +66,7 @@ function a11yProps(index) {
 const Profile = () => {
   const theme = useTheme();
   const user = useUser();
+  const router = useRouter();
 
   const { data: session } = useSession();
   const provider = session?.provider;
@@ -64,6 +82,9 @@ const Profile = () => {
       default:
         signOut({ redirect: false });
     }
+    router.push({
+      query: {}
+    });
   };
 
   const anchorRef = useRef(null);
@@ -106,10 +127,12 @@ const Profile = () => {
         aria-haspopup="true"
         onClick={handleToggle}
       >
-        <Stack direction="row" spacing={2} alignItems="center" sx={{ p: 0.5 }}>
-          <Avatar alt={user.name} src={user.avatar} size="xs" />
-          <Typography variant="subtitle1">{user?.name}</Typography>
-        </Stack>
+        {user && (
+          <Stack direction="row" spacing={1.5} alignItems="center" sx={{ p: 0.25, px: 0.75 }}>
+            <Avatar alt={user.name} src={user.avatar} sx={{ width: 30, height: 30 }} />
+            <Typography variant="subtitle1"> {capitalize(user.name)}</Typography>
+          </Stack>
+        )}
       </ButtonBase>
       <Popper
         placement="bottom-end"
@@ -148,9 +171,9 @@ const Profile = () => {
                     <Grid container justifyContent="space-between" alignItems="center">
                       <Grid item>
                         <Stack direction="row" spacing={1.25} alignItems="center">
-                          <Avatar alt={user.name} src={user.avatar} />
+                          <Avatar alt="profile user" src={avatar1} sx={{ width: 32, height: 32 }} />
                           <Stack>
-                            <Typography variant="h6">{user.name}</Typography>
+                            <Typography variant="h6">{user?.name}</Typography>
                             <Typography variant="body2" color="textSecondary">
                               UI/UX Designer
                             </Typography>

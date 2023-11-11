@@ -6,7 +6,7 @@ import NextLink from 'next/link';
 import { Box, Button, Grid, Stack, Typography } from '@mui/material';
 
 // project import
-import { DEFAULT_PATH } from 'config';
+import { APP_DEFAULT_PATH } from 'config';
 import Layout from 'layout';
 import Page from 'components/Page';
 
@@ -52,7 +52,7 @@ function Error404() {
             <Typography color="textSecondary" align="center" sx={{ width: { xs: '73%', sm: '61%' } }}>
               The page you are looking was moved, removed, renamed, or might never exist!
             </Typography>
-            <NextLink href={DEFAULT_PATH} passHref legacyBehavior>
+            <NextLink href={APP_DEFAULT_PATH} passHref legacyBehavior>
               <Button variant="contained">Back To Home</Button>
             </NextLink>
           </Stack>
