@@ -47,14 +47,7 @@ export default function AlterandoPass() {
           </Typography>
           <Divider style={{ color: 'blue' }}></Divider>
           <br />
-          <Typography variant="body1">
-            Acesse o sistema através do link:{' '}
-            <a href="https://abrir.link/QGRpL" target="_blank" rel="noopener noreferrer">
-              Comarch
-            </a>
-            <br />
-            Digite o login e a senha no campo "BA"
-          </Typography>
+          <Typography variant="body1">Selecione a opção Alterar a senha.</Typography>
         </MainCard>
       </Grid>
     </Grid>

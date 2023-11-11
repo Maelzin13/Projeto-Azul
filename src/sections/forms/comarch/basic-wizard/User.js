@@ -48,13 +48,10 @@ export default function User() {
           <Divider style={{ color: 'blue' }}></Divider>
           <br />
           <Typography variant="body1">
-            Acesse o sistema através do link:{' '}
-            <a href="https://abrir.link/QGRpL" target="_blank" rel="noopener noreferrer">
-              Comarch
-            </a>
-            <br />
-            Digite o login e a senha no campo "BA"
+            Busque o usuário por algum dos critérios de busca existentes (user ou RE) e pressione Buscar.
           </Typography>
+          <br />
+          <Typography>Selecione o link Status no usuário que se deseja Resetar</Typography>
         </MainCard>
       </Grid>
     </Grid>

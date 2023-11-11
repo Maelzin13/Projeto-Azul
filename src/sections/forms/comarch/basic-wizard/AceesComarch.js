@@ -52,9 +52,9 @@ export default function AceesComarch() {
             <a href="https://abrir.link/QGRpL" target="_blank" rel="noopener noreferrer">
               Comarch
             </a>
-            <br />
-            Digite o login e a senha no campo "BA"
           </Typography>
+          <br />
+          <Typography>Digite o login e a senha no campo &quot;BA&quot;.</Typography>
         </MainCard>
       </Grid>
     </Grid>
