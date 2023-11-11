@@ -4,16 +4,16 @@ import { Grid } from '@mui/material';
 // project imports
 import Layout from 'layout';
 import Page from 'components/Page';
-import BasicWizard from 'sections/forms/wizard/basic-wizard';
+import Juniper from 'sections/forms/juniper/basic-wizard/index';
 // import ValidationWizard from 'sections/forms/wizard/validation-wizard';
 
 // ==============================|| FORMS WIZARD ||============================== //
 
-const FormsWizard = () => (
+const JuniperTela = () => (
   <Page title="Forms Wizard">
     <Grid container spacing={2.5} justifyContent="center">
       <Grid item xs={12} md={6} lg={7}>
-        <BasicWizard />
+        <Juniper />
       </Grid>
       {/* <Grid item xs={12} md={6} lg={7}>
         <ValidationWizard />
@@ -22,8 +22,8 @@ const FormsWizard = () => (
   </Page>
 );
 
-FormsWizard.getLayout = function getLayout(page) {
+JuniperTela.getLayout = function getLayout(page) {
   return <Layout>{page}</Layout>;
 };
 
-export default FormsWizard;
+export default JuniperTela;

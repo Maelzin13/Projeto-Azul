@@ -48,7 +48,7 @@ function getStepContent(step) {
 
 // ==============================|| FORMS WIZARD - BASIC ||============================== //
 
-const BasicWizard = () => {
+const Juniper = () => {
   const [activeStep, setActiveStep] = useState(0);
 
   const handleNext = () => {
@@ -108,4 +108,4 @@ const BasicWizard = () => {
   );
 };
 
-export default BasicWizard;
+export default Juniper;

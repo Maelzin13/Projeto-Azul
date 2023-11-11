@@ -21,58 +21,58 @@ import {
 // project import
 import Layout from 'layout';
 import Page from 'components/Page';
-import MainCard from 'components/MainCard';
-import IconButton from 'components/@extended/IconButton';
+// import MainCard from 'components/MainCard';
+// import IconButton from 'components/@extended/IconButton';
 import UsersCardChart from 'sections/dashboard/analytics/UsersCardChart';
 import OrdersCardChart from 'sections/dashboard/analytics/OrdersCardChart';
 import SalesCardChart from 'sections/dashboard/analytics/SalesCardChart';
 import MarketingCardChart from 'sections/dashboard/analytics/MarketingCardChart';
 import AnalyticsDataCard from 'components/cards/statistics/AnalyticsDataCard';
 
-import IncomeAreaChart from 'sections/dashboard/default/IncomeAreaChart';
-import MonthlyBarChart from 'sections/dashboard/default/MonthlyBarChart';
+// import IncomeAreaChart from 'sections/dashboard/default/IncomeAreaChart';
+// import MonthlyBarChart from 'sections/dashboard/default/MonthlyBarChart';
 
-import ReportChart from 'sections/dashboard/analytics/ReportChart';
-import IncomeChart from 'sections/dashboard/analytics/IncomeChart';
+// import ReportChart from 'sections/dashboard/analytics/ReportChart';
+// import IncomeChart from 'sections/dashboard/analytics/IncomeChart';
 
-import SalesChart from 'sections/dashboard/SalesChart';
-import AcquisitionChannels from 'sections/dashboard/analytics/AcquisitionChannels';
+// import SalesChart from 'sections/dashboard/SalesChart';
+// import AcquisitionChannels from 'sections/dashboard/analytics/AcquisitionChannels';
 
-// assets
-import { DownloadOutlined, CaretDownOutlined } from '@ant-design/icons';
+// // assets
+// import { DownloadOutlined, CaretDownOutlined } from '@ant-design/icons';
 
-// sales report status
-const status = [
-  {
-    value: 'today',
-    label: 'Today'
-  },
-  {
-    value: 'month',
-    label: 'This Month'
-  },
-  {
-    value: 'year',
-    label: 'This Year'
-  }
-];
+// // sales report status
+// const status = [
+//   {
+//     value: 'today',
+//     label: 'Today'
+//   },
+//   {
+//     value: 'month',
+//     label: 'This Month'
+//   },
+//   {
+//     value: 'year',
+//     label: 'This Year'
+//   }
+// ];
 
 // ==============================|| WIDGET - CHARTS ||============================== //
 
 const WidgetChart = () => {
-  const theme = useTheme();
+  // const theme = useTheme();
 
-  const [value, setValue] = useState('today');
-  const [slot, setSlot] = useState('week');
-  const [quantity, setQuantity] = useState('By volume');
+  // const [value, setValue] = useState('today');
+  // const [slot, setSlot] = useState('week');
+  // const [quantity, setQuantity] = useState('By volume');
 
-  const handleQuantity = (e) => {
-    setQuantity(e.target.value);
-  };
+  // const handleQuantity = (e) => {
+  //   setQuantity(e.target.value);
+  // };
 
-  const handleChange = (event, newAlignment) => {
-    if (newAlignment) setSlot(newAlignment);
-  };
+  // const handleChange = (event, newAlignment) => {
+  //   if (newAlignment) setSlot(newAlignment);
+  // };
 
   return (
     <Page title="Chart Widget">
@@ -100,7 +100,7 @@ const WidgetChart = () => {
         </Grid>
 
         {/* row 2 */}
-        <Grid item xs={12} md={7} lg={8}>
+        {/* <Grid item xs={12} md={7} lg={8}>
           <Grid container alignItems="center" justifyContent="space-between">
             <Grid item>
               <Typography variant="h5">Unique Visitor</Typography>
@@ -150,10 +150,10 @@ const WidgetChart = () => {
             </Box>
             <MonthlyBarChart />
           </MainCard>
-        </Grid>
+        </Grid> */}
 
         {/* row 3 */}
-        <Grid item xs={12} md={5} lg={4}>
+        {/* <Grid item xs={12} md={5} lg={4}>
           <Grid container alignItems="center" justifyContent="space-between">
             <Grid item>
               <Typography variant="h5">Analytics Report</Typography>
@@ -232,10 +232,10 @@ const WidgetChart = () => {
               <IncomeChart slot={slot} quantity={quantity} />
             </Box>
           </MainCard>
-        </Grid>
+        </Grid> */}
 
         {/* row 4 */}
-        <Grid item xs={12} md={7} lg={8}>
+        {/* <Grid item xs={12} md={7} lg={8}>
           <Grid container alignItems="center" justifyContent="space-between">
             <Grid item>
               <Typography variant="h5">Sales Report</Typography>
@@ -261,7 +261,7 @@ const WidgetChart = () => {
         </Grid>
         <Grid item xs={12} md={5} lg={4}>
           <AcquisitionChannels />
-        </Grid>
+        </Grid> */}
       </Grid>
     </Page>
   );

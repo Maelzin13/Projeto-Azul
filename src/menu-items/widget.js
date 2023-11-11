@@ -13,19 +13,19 @@ const widget = {
       id: 'statistics',
       title: <FormattedMessage id="comarch" />,
       type: 'item',
-      url: '/forms/wizard'
+      url: '/forms/resetComarch'
     },
     {
       id: 'data',
       title: <FormattedMessage id="wordtracer" />,
       type: 'item',
-      url: '/widget/data'
+      url: '/forms/resetWords'
     },
     {
       id: 'wizard',
       title: <FormattedMessage id="juniper" />,
       type: 'item',
-      url: '/auth/reset-password'
+      url: '/forms/resetJuniper'
     },
     {
       id: 'apdata',

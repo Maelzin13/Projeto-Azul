@@ -112,11 +112,6 @@ const Header = ({ handleDrawerOpen, layout = 'landing', ...others }) => {
                   </Link>
                 </NextLink>
               )}
-              <NextLink href="/components-overview/buttons" passHref legacyBehavior>
-                <Link className="header-link" color={handleDrawerOpen ? 'primary' : 'white'} underline="none">
-                  Components
-                </Link>
-              </NextLink>
               <Link className="header-link" color="white" href="https://codedthemes.gitbook.io/mantis/" target="_blank" underline="none">
                 Documentation
               </Link>
@@ -150,13 +145,6 @@ const Header = ({ handleDrawerOpen, layout = 'landing', ...others }) => {
                   <NextLink href={DEFAULT_PATH} passHref legacyBehavior>
                     <Button variant="outlined" size="small" color="warning" sx={{ mt: 0.5, height: 28 }}>
                       Dashboard
-                    </Button>
-                  </NextLink>
-                )}
-                {layout !== 'component' && (
-                  <NextLink href="/components-overview/buttons" passHref legacyBehavior>
-                    <Button variant="outlined" size="small" color="warning" sx={{ mt: 0.5, height: 28 }}>
-                      All Components
                     </Button>
                   </NextLink>
                 )}
