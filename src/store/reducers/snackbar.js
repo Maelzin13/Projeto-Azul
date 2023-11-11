@@ -52,10 +52,12 @@ const snackbar = createSlice({
       const { maxStack } = action.payload;
       state.maxStack = maxStack;
     },
+
     handlerDense(state, action) {
       const { dense } = action.payload;
       state.dense = dense;
     },
+
     handlerIconVariants(state, action) {
       const { iconVariant } = action.payload;
       state.iconVariant = iconVariant;

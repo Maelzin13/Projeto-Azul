@@ -4,7 +4,7 @@ import { alpha, createTheme } from '@mui/material/styles';
 // third-party
 import { presetDarkPalettes, presetPalettes } from '@ant-design/colors';
 
-// project-imports
+// project import
 import ThemeOption from './theme';
 import { ThemeMode } from 'config';
 

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 // material-ui
 import { styled, useTheme } from '@mui/material/styles';
-import { Box, Button, Container, CardMedia, Divider, Grid, Link, Stack, Typography } from '@mui/material';
+import { Box, Button, Container, CardMedia, Divider, Grid, Stack, Link, Typography } from '@mui/material';
 
 // third party
 import { motion } from 'framer-motion';
@@ -43,6 +43,7 @@ const FooterBlock = ({ isFull }) => {
     fontSize: '0.875rem',
     fontWeight: 400,
     opacity: '0.6',
+    cursor: 'pointer',
     '&:hover': {
       opacity: '1'
     }
@@ -102,7 +103,11 @@ const FooterBlock = ({ isFull }) => {
               maxWidth: 700,
               position: 'absolute',
               top: '-28%',
-              right: 0
+              right: 0,
+              ...(theme.direction === ThemeDirection.RTL && {
+                transform: 'scaleX(-1)',
+                float: 'none'
+              })
             }}
           />
           <Container>

@@ -2,8 +2,6 @@ import PropTypes from 'prop-types';
 
 // material-ui
 import { useTheme } from '@mui/material/styles';
-
-// project-imports
 import { ThemeMode } from 'config';
 
 /**

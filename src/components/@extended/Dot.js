@@ -14,7 +14,6 @@ const Dot = ({ color, size, variant, sx }) => {
 
   return (
     <Box
-      component="span"
       sx={{
         width: size || 8,
         height: size || 8,
@@ -33,7 +32,7 @@ Dot.propTypes = {
   color: PropTypes.string,
   size: PropTypes.number,
   variant: PropTypes.string,
-  sx: PropTypes.object
+  sx: PropTypes.oneOfType([PropTypes.object, PropTypes.string])
 };
 
 export default Dot;

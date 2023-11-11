@@ -9,6 +9,7 @@ import * as yup from 'yup';
 
 // project imports
 import AnimateButton from 'components/@extended/AnimateButton';
+import { useState } from 'react';
 
 const validationSchema = yup.object({
   firstName: yup.string().required('First Name is required'),
@@ -33,10 +34,14 @@ const AddressForm = ({ shippingData, setShippingData, handleNext, setErrorIndex 
     }
   });
 
+  const [gifVisible, setGifVisible] = useState(false);
+
   return (
     <>
+      {gifVisible && <img src="/assets/coming_soon_Azul.png" alt="GIF" style={{ width: '100%', marginTop: '20px' }} />}
+
       <Typography variant="h5" gutterBottom sx={{ mb: 2 }}>
-        Shipping address
+        Shipping address asd
       </Typography>
       <form onSubmit={formik.handleSubmit} id="validation-forms">
         <Grid container spacing={3}>

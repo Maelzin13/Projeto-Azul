@@ -11,7 +11,7 @@ import MainCard from 'components/MainCard';
 import AnimateButton from 'components/@extended/AnimateButton';
 
 // step options
-const steps = ['Shipping address', 'Payment details', 'Review your order'];
+const steps = ['Shipping address', 'Payment details', 'Review your order', 'Review your order', 'Review your order', 'Review your order'];
 
 const getStepContent = (step, handleNext, handleBack, setErrorIndex, shippingData, setShippingData, paymentData, setPaymentData) => {
   switch (step) {
@@ -30,6 +30,14 @@ const getStepContent = (step, handleNext, handleBack, setErrorIndex, shippingDat
         />
       );
     case 2:
+      return <Review />;
+    case 3:
+      return <Review />;
+    case 4:
+      return <Review />;
+    case 5:
+      return <Review />;
+    case 6:
       return <Review />;
     default:
       throw new Error('Unknown step');

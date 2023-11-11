@@ -86,8 +86,8 @@ function ConfigProvider({ children }) {
       value={{
         ...config,
         onChangeContainer,
-        onChangeMode,
         onChangeLocalization,
+        onChangeMode,
         onChangePresetColor,
         onChangeDirection,
         onChangeMiniDrawer,

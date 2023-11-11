@@ -6,7 +6,7 @@ import NextLink from 'next/link';
 import { Box, Button, Grid, Stack, Typography } from '@mui/material';
 
 // project import
-import { APP_DEFAULT_PATH } from 'config';
+import { DEFAULT_PATH } from 'config';
 import Layout from 'layout';
 import Page from 'components/Page';
 
@@ -32,7 +32,7 @@ function UnderConstruction() {
             <Typography color="textSecondary" align="center" sx={{ width: { xs: '73%', sm: '82%' } }}>
               Hey! Please check out this site later. We are doing some maintenance on it right now.
             </Typography>
-            <NextLink href={APP_DEFAULT_PATH} passHref legacyBehavior>
+            <NextLink href={DEFAULT_PATH} passHref legacyBehavior>
               <Button variant="contained">Back To Home</Button>
             </NextLink>
           </Stack>

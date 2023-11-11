@@ -7,7 +7,7 @@ import { useTheme } from '@mui/material/styles';
 import { Box, Button, Grid, Stack, Typography, useMediaQuery } from '@mui/material';
 
 // project import
-import { APP_DEFAULT_PATH } from 'config';
+import { DEFAULT_PATH } from 'config';
 import Layout from 'layout';
 import Page from 'components/Page';
 
@@ -36,7 +36,7 @@ function Error500() {
             <Typography color="textSecondary" variant="body2" align="center" sx={{ width: { xs: '73%', sm: '70%' }, mt: 1 }}>
               Server error 500. we fixing the problem. please try again at a later stage.
             </Typography>
-            <NextLink href={APP_DEFAULT_PATH} passHref legacyBehavior>
+            <NextLink href={DEFAULT_PATH} passHref legacyBehavior>
               <Button variant="contained" sx={{ textTransform: 'none', mt: 4 }}>
                 Back To Home
               </Button>

@@ -6,7 +6,7 @@ import { useRouter } from 'next/router';
 import { useSession } from 'next-auth/react';
 
 // project import
-import { APP_DEFAULT_PATH } from 'config';
+import { DEFAULT_PATH } from 'config';
 
 // types
 import Loader from 'components/Loader';
@@ -22,7 +22,7 @@ const GuestGuard = ({ children }) => {
       const res = await fetch('/api/auth/protected');
       const json = await res.json();
       if (json.protected) {
-        let RedirectPath = router.query.from ? router.query.from : APP_DEFAULT_PATH;
+        let RedirectPath = router.query.from ? router.query.from : DEFAULT_PATH;
         router.push({
           pathname: RedirectPath,
           query: {}

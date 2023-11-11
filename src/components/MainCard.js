@@ -5,8 +5,9 @@ import { forwardRef } from 'react';
 import { useTheme } from '@mui/material/styles';
 import { Card, CardContent, CardHeader, Divider, Typography } from '@mui/material';
 
-// project-imports
+// project import
 import { ThemeMode } from 'config';
+import Highlighter from './third-party/Highlighter';
 
 // header style
 const headerSX = {
@@ -33,6 +34,7 @@ const MainCard = forwardRef(
       sx = {},
       title,
       codeHighlight = false,
+      codeString,
       modal = false,
       ...others
     },
@@ -96,6 +98,14 @@ const MainCard = forwardRef(
         {/* card content */}
         {content && <CardContent sx={contentSX}>{children}</CardContent>}
         {!content && children}
+
+        {/* card footer - clipboard & highlighter  */}
+        {codeString && (
+          <>
+            <Divider sx={{ borderStyle: 'dashed' }} />
+            <Highlighter codeString={codeString} codeHighlight={codeHighlight} />
+          </>
+        )}
       </Card>
     );
   }
@@ -117,7 +127,8 @@ MainCard.propTypes = {
   sx: PropTypes.object,
   title: PropTypes.oneOfType([PropTypes.node, PropTypes.string, PropTypes.object]),
   modal: PropTypes.bool,
-  codeHighlight: PropTypes.bool
+  codeHighlight: PropTypes.bool,
+  codeString: PropTypes.string
 };
 
 export default MainCard;

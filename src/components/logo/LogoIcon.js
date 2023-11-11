@@ -2,13 +2,12 @@
 import { useTheme } from '@mui/material/styles';
 
 /**
- *
  * if you want to use image instead of <svg> uncomment following.
+ *
  * const logoIconDark = 'assets/images/logo-icon-dark.svg';
  * const logoIcon = 'assets/images/logo-icon.svg';
- * import { ThemeMode } from "config";
- *
- **/
+ * import { ThemeMode } from 'config';
+ */
 
 // ==============================|| LOGO ICON SVG ||============================== //
 

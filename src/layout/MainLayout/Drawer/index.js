@@ -10,7 +10,7 @@ import DrawerHeader from './DrawerHeader';
 import DrawerContent from './DrawerContent';
 import MiniDrawerStyled from './MiniDrawerStyled';
 
-import { DRAWER_WIDTH } from 'config';
+import { drawerWidth } from 'config';
 import { dispatch, useSelector } from 'store';
 import { openDrawer } from 'store/reducers/menu';
 
@@ -48,7 +48,7 @@ const MainDrawer = ({ window }) => {
             display: { xs: 'block', lg: 'none' },
             '& .MuiDrawer-paper': {
               boxSizing: 'border-box',
-              width: DRAWER_WIDTH,
+              width: drawerWidth,
               borderRight: `1px solid ${theme.palette.divider}`,
               backgroundImage: 'none',
               boxShadow: 'inherit'

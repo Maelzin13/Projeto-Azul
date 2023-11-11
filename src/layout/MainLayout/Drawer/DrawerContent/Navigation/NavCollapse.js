@@ -24,13 +24,15 @@ import Dot from 'components/@extended/Dot';
 import SimpleBar from 'components/third-party/SimpleBar';
 import Transitions from 'components/@extended/Transitions';
 
-import { MenuOrientation, ThemeMode } from 'config';
 import useConfig from 'hooks/useConfig';
 import { dispatch, useSelector } from 'store';
 import { activeItem } from 'store/reducers/menu';
 
 // assets
 import { BorderOutlined, DownOutlined, UpOutlined, RightOutlined } from '@ant-design/icons';
+
+// types
+import { MenuOrientation, ThemeMode } from 'config';
 
 // mini-menu - wrapper
 const PopperStyled = styled(Popper)(({ theme }) => ({

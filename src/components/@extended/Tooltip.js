@@ -63,5 +63,5 @@ CustomTooltip.propTypes = {
   children: PropTypes.node,
   arrow: PropTypes.bool,
   labelColor: PropTypes.string,
-  rest: PropTypes.array
+  rest: PropTypes.any
 };

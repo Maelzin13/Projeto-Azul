@@ -11,7 +11,15 @@ import MainCard from 'components/MainCard';
 import AnimateButton from 'components/@extended/AnimateButton';
 
 // step options
-const steps = ['Shipping address', 'Payment details', 'Review your order'];
+const steps = [
+  'Acessos Comarch',
+  'Encontrando user',
+  'User Localizado',
+  'Alterando password',
+  'Reset do password',
+  'Acess. login de user',
+  'Confirmando Reset'
+];
 
 function getStepContent(step) {
   switch (step) {
@@ -20,6 +28,16 @@ function getStepContent(step) {
     case 1:
       return <PaymentForm />;
     case 2:
+      return <Review />;
+    case 3:
+      return <Review />;
+    case 4:
+      return <Review />;
+    case 5:
+      return <Review />;
+    case 6:
+      return <Review />;
+    case 7:
       return <Review />;
     default:
       throw new Error('Unknown step');
@@ -40,7 +58,7 @@ const BasicWizard = () => {
   };
 
   return (
-    <MainCard title="Basic">
+    <MainCard title="COMARCH">
       <Stepper activeStep={activeStep} sx={{ pt: 3, pb: 5 }}>
         {steps.map((label) => (
           <Step key={label}>
@@ -71,12 +89,12 @@ const BasicWizard = () => {
             {getStepContent(activeStep)}
             <Stack direction="row" justifyContent={activeStep !== 0 ? 'space-between' : 'flex-end'}>
               {activeStep !== 0 && (
-                <Button onClick={handleBack} sx={{ my: 3, ml: 1 }}>
+                <Button variant="contained" color="success" onClick={handleBack} sx={{ my: 3, ml: 1 }}>
                   Back
                 </Button>
               )}
               <AnimateButton>
-                <Button variant="contained" onClick={handleNext} sx={{ my: 3, ml: 1 }}>
+                <Button variant="contained" color="success" onClick={handleNext} sx={{ my: 3, ml: 1 }}>
                   {activeStep === steps.length - 1 ? 'Place order' : 'Next'}
                 </Button>
               </AnimateButton>

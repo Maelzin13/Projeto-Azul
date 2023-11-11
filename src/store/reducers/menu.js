@@ -1,3 +1,4 @@
+// third-party
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 // project import
@@ -8,7 +9,7 @@ const initialState = {
   openItem: ['dashboard'],
   openComponent: 'buttons',
   selectedID: null,
-  drawerOpen: true,
+  drawerOpen: false,
   componentDrawerOpen: true,
   menu: {},
   error: null
