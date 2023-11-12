@@ -11,7 +11,6 @@ import ScharcUser from './ScharcUser';
 import User from './User';
 import AlterandoPass from './AlterandoPass';
 import Reset from './Reset';
-import AcessLogin from './AcessLogin';
 import Confirmando from './Confirm';
 
 // step options
@@ -38,8 +37,6 @@ function getStepContent(step) {
     case 4:
       return <Reset />;
     case 5:
-      return <AcessLogin />;
-    case 6:
       return <Confirmando />;
     default:
       throw new Error('Unknown step');

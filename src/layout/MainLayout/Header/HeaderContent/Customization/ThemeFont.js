@@ -57,10 +57,10 @@ const ThemeFont = () => {
                 >
                   <Box sx={{ minWidth: 60, bgcolor: 'background.paper', p: 1, '&:hover': { bgcolor: 'background.paper' } }}>
                     <Stack spacing={0.5} alignItems="center">
-                      <Typography variant="h5" color="textPrimary" sx={{ fontFamily: item.value }}>
+                      <Typography variant="h5" color="textPrimary" sx={{ fontFamily: item.value, fontSize: '20px' }}>
                         Aa
                       </Typography>
-                      <Typography variant="caption" color="textSecondary">
+                      <Typography variant="caption" color="textSecondary" sx={{ fontSize: '14px' }}>
                         {item.label}
                       </Typography>
                     </Stack>

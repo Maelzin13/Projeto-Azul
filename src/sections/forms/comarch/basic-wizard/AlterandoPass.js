@@ -43,11 +43,13 @@ export default function AlterandoPass() {
       {/* Right side */}
       <Grid item xs={6}>
         <MainCard sx={{ height: '100%', textAlign: 'center', borderRadius: '25px' }}>
-          <Typography variant="h6" style={{ fontSize: '20px' }}>
-            <strong>Procedimentos</strong>
+          <Typography variant="h6" style={{ fontSize: '17px' }}>
+            Procedimentos
           </Typography>
           <hr></hr>
-          <Typography variant="body1">Selecione a opção <stong>Alterar a senha</stong>.</Typography>
+          <Typography variant="body1" style={{ fontSize: '17px' }}>
+            Selecione a opção Alterar a senha.
+          </Typography>
         </MainCard>
       </Grid>
     </Grid>

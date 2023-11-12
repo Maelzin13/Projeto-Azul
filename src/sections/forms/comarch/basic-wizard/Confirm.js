@@ -43,11 +43,11 @@ export default function Confirmando() {
       {/* Right side */}
       <Grid item xs={6}>
         <MainCard sx={{ height: '100%', textAlign: 'center', borderRadius: '25px' }}>
-          <Typography variant="h6" style={{ fontSize: '20px' }}>
-            <strong>Procedimentos</strong>
+          <Typography variant="h6" style={{ fontSize: '17' }}>
+            Procedimentos
           </Typography>
           <hr></hr>
-          <Typography variant="body1">
+          <Typography variant="body1" style={{ fontSize: '17' }}>
             Acesse o sistema através do link:{' '}
             <a href="https://abrir.link/QGRpL" target="_blank" rel="noopener noreferrer">
               Comarch

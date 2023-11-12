@@ -1,11 +1,11 @@
+// ...
+
 import PropTypes from 'prop-types';
 import { useMemo } from 'react';
 
-// material-ui
 import { CssBaseline, StyledEngineProvider } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
-// project import
 import useConfig from 'hooks/useConfig';
 import Palette from './palette';
 import Typography from './typography';
@@ -19,11 +19,7 @@ export default function ThemeCustomization({ children }) {
 
   const theme = useMemo(() => Palette(mode, presetColor), [mode, presetColor]);
 
-  const themeTypography = useMemo(
-    () => Typography(fontFamily),
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    [fontFamily]
-  );
+  const themeTypography = useMemo(() => Typography(fontFamily), [fontFamily]);
   const themeCustomShadows = useMemo(() => CustomShadows(theme), [theme]);
 
   const themeOptions = useMemo(
