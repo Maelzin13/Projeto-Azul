@@ -15,7 +15,6 @@ import AnimateButton from 'components/@extended/AnimateButton';
 // assets
 import { SendOutlined } from '@ant-design/icons';
 
-const imgfooterlogo = 'assets/images/landing/codedthemes-logo.svg';
 const imgfootersoc1 = 'assets/images/landing/img-soc1.svg';
 const imgfootersoc2 = 'assets/images/landing/img-soc2.svg';
 const imgfootersoc3 = 'assets/images/landing/img-soc3.svg';

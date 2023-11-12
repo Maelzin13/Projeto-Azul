@@ -5,23 +5,19 @@ import NextLink from 'next/link';
 import { ButtonBase } from '@mui/material';
 
 // project import
-import LogoMain from './LogoMain';
-import LogoIcon from './LogoIcon';
 import { DEFAULT_PATH } from 'config';
 
 // ==============================|| MAIN LOGO ||============================== //
 
-const LogoSection = ({ reverse, isIcon, sx, to }) => (
+const LogoSection = ({ sx, to }) => (
   <NextLink href={!to ? DEFAULT_PATH : to} passHref legacyBehavior>
     <ButtonBase disableRipple sx={sx}>
-      {isIcon ? <LogoIcon /> : <LogoMain reverse={reverse} />}
+      <img src="/assets/images/logo.png" alt="Your Logo Alt Text" style={{ width: '50%', height: 'auto' }} />
     </ButtonBase>
   </NextLink>
 );
 
 LogoSection.propTypes = {
-  reverse: PropTypes.bool,
-  isIcon: PropTypes.bool,
   sx: PropTypes.object,
   to: PropTypes.string
 };
