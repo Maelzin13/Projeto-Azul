@@ -46,11 +46,13 @@ export default function ScharcUser() {
           <Typography variant="h6" style={{ fontSize: '20px' }}>
             Procedimentos
           </Typography>
-          <Divider style={{ color: 'blue' }}></Divider>
-          <br />
+          <hr></hr>
           <Typography variant="body1">
-            Ao acessar o sistema, será exibida uma tela de apresentação da Comarch. Selecione a aba Administração --&gt; Usuários --&gt;
-            Encontrar Usuários.
+            Na aba Adiministração vá em Usuarios, Encontrar Usuarios.
+            <br></br>
+            <br></br>
+
+            Acesse o campo de Usuario faça a sua pesquisa.
           </Typography>
           <br />
           <Typography>

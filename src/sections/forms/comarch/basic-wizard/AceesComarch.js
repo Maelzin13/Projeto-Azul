@@ -46,8 +46,7 @@ export default function AceesComarch() {
           <Typography variant="h6" style={{ fontSize: '20px' }}>
             Procedimentos
           </Typography>
-          <Divider style={{ color: 'blue' }}></Divider>
-          <br />
+          <hr></hr>
           <Typography variant="body1">
             Acesse o sistema através do link:{' '}
             <a href="https://abrir.link/QGRpL" target="_blank" rel="noopener noreferrer">

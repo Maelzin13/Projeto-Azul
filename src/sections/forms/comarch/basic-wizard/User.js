@@ -46,8 +46,7 @@ export default function User() {
           <Typography variant="h6" style={{ fontSize: '20px' }}>
             Procedimentos
           </Typography>
-          <Divider style={{ color: 'blue' }}></Divider>
-          <br />
+          <hr></hr>
           <Typography variant="body1">
             Busque o usuário por algum dos critérios de busca existentes (user ou RE) e pressione Buscar.
           </Typography>
