@@ -35,7 +35,7 @@ const config = {
 
   container: true,
 
-  mode: ThemeMode.LIGHT,
+  mode: ThemeMode.DARK,
 
   presetColor: 'default',
 

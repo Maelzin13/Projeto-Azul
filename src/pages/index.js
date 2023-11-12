@@ -1,12 +1,12 @@
 // project import
 import Layout from 'layout';
 import Page from 'components/Page';
-import Landing from 'sections/landing';
+import DashboardDefault from './dashboard/default';
 
 export default function HomePage() {
   return (
     <Page title="Landing">
-      <Landing />
+      <DashboardDefault />
     </Page>
   );
 }

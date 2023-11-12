@@ -8,7 +8,6 @@ import { Box, Container, Toolbar, useMediaQuery } from '@mui/material';
 // project import
 import Drawer from './Drawer';
 import Header from './Header';
-import Footer from './Footer';
 import HorizontalBar from './Drawer/HorizontalBar';
 import Breadcrumbs from 'components/@extended/Breadcrumbs';
 
@@ -17,6 +16,7 @@ import { MenuOrientation } from 'config';
 import useConfig from 'hooks/useConfig';
 import { dispatch } from 'store';
 import { openDrawer } from 'store/reducers/menu';
+import AuthWrapper from 'sections/auth/AuthWrapper';
 
 // ==============================|| MAIN LAYOUT ||============================== //
 
@@ -55,7 +55,6 @@ const MainLayout = ({ children }) => {
         >
           <Breadcrumbs navigation={navigation} title titleBottom card={false} divider={false} />
           {children}
-          <Footer />
         </Container>
       </Box>
     </Box>
