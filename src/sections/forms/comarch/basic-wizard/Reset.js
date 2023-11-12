@@ -45,8 +45,7 @@ export default function Reset() {
           <Typography variant="h6" style={{ fontSize: '20px' }}>
             Procedimentos
           </Typography>
-          <Divider style={{ color: 'blue' }}></Divider>
-          <br />
+          <hr></hr>
           <Typography variant="body1">Digite nova senha, clicar em Salva</Typography>
         </MainCard>
       </Grid>

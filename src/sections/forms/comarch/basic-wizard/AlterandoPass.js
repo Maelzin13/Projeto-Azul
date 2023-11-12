@@ -45,8 +45,7 @@ export default function AlterandoPass() {
           <Typography variant="h6" style={{ fontSize: '20px' }}>
             Procedimentos
           </Typography>
-          <Divider style={{ color: 'blue' }}></Divider>
-          <br />
+          <hr></hr>
           <Typography variant="body1">Selecione a opção Alterar a senha.</Typography>
         </MainCard>
       </Grid>
