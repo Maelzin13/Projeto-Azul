@@ -79,18 +79,19 @@ const Comarch = () => {
       <>
         {activeStep === steps.length ? (
           <>
-            <Typography variant="h5" gutterBottom>
-              Thank you for your order.
-            </Typography>
-            <Typography variant="subtitle1">
-              Your order number is #2001539. We have emailed your order confirmation, and will send you an update when your order has
-              shipped.
+            <Typography variant="h5" gutterBottom sx={{ textAlign: 'center' }}>
+              Caso não tenha entendido, fique à vontade para ver o procedimento novamente
             </Typography>
             <Stack direction="row" justifyContent="flex-end">
               <AnimateButton>
-                <Button variant="contained" color="error" onClick={() => setActiveStep(0)} sx={{ my: 3, ml: 1 }}>
-                  Inicio do Procedimento
-                </Button>
+              <Button
+  variant="contained"
+  color="error"
+  onClick={() => setActiveStep(0)}
+  sx={{ my: 3, display: 'flex', justifyContent: 'center' }}
+>
+  Início do Procedimento
+</Button>
               </AnimateButton>
             </Stack>
           </>
