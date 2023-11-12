@@ -1,12 +1,8 @@
 import PropTypes from 'prop-types';
 import * as React from 'react';
 import { useState } from 'react';
-
-// next
 import NextLink from 'next/link';
 import { useSession } from 'next-auth/react';
-
-// material-ui
 import AppBar from '@mui/material/AppBar';
 import { useTheme } from '@mui/material/styles';
 import {
@@ -26,20 +22,12 @@ import {
   Typography,
   useScrollTrigger
 } from '@mui/material';
-
-// project import
 import { DEFAULT_PATH, ThemeMode } from 'config';
 import IconButton from 'components/@extended/IconButton';
-
 import AnimateButton from 'components/@extended/AnimateButton';
 import Logo from 'components/logo';
-
-// assets
 import { MenuOutlined, LineOutlined } from '@ant-design/icons';
 
-// ==============================|| COMPONENTS - APP BAR ||============================== //
-
-// elevation scroll
 function ElevationScroll({ layout, children, window }) {
   const theme = useTheme();
 
@@ -66,7 +54,6 @@ const Header = ({ handleDrawerOpen, layout = 'landing', ...others }) => {
   const matchDownMd = useMediaQuery(theme.breakpoints.down('md'));
   const [drawerToggle, setDrawerToggle] = useState(false);
 
-  /** Method called on multiple components with different event types */
   const drawerToggler = (open) => (event) => {
     if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
       return;

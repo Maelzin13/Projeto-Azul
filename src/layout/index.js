@@ -1,25 +1,17 @@
 import PropTypes from 'prop-types';
 import { lazy, Suspense } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-
-// material-ui
 import { styled } from '@mui/material/styles';
 import LinearProgress from '@mui/material/LinearProgress';
 import { Container, Toolbar } from '@mui/material';
-
-// project import
 import ComponentLayout from './ComponentLayout';
 import MainLayout from './MainLayout';
 import AuthGuard from 'utils/route-guard/AuthGuard';
 import GuestGuard from 'utils/route-guard/GuestGuard';
-
-// project import - store
 import { openComponentDrawer } from 'store/reducers/menu';
 
 const Header = lazy(() => import('./Header'));
 const FooterBlock = lazy(() => import('./FooterBlock'));
-
-// ==============================|| Loader ||============================== //
 
 const LoaderWrapper = styled('div')(({ theme }) => ({
   position: 'fixed',

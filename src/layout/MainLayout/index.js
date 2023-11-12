@@ -16,7 +16,6 @@ import { MenuOrientation } from 'config';
 import useConfig from 'hooks/useConfig';
 import { dispatch } from 'store';
 import { openDrawer } from 'store/reducers/menu';
-import AuthWrapper from 'sections/auth/AuthWrapper';
 
 // ==============================|| MAIN LAYOUT ||============================== //
 
