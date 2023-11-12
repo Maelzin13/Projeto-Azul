@@ -47,7 +47,8 @@ export default function Reset() {
             <strong>Procedimentos</strong>
           </Typography>
           <hr></hr>
-          <Typography variant="body1">Digite nova senha, e clica em salvar</Typography>
+          <br></br>
+          <Typography variant="body1">Digite a senha nova e confirme, depois clique em <strong>Salvar.</strong></Typography>
         </MainCard>
       </Grid>
     </Grid>
