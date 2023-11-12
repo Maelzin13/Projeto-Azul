@@ -85,13 +85,12 @@ const Comarch = () => {
             <Stack direction="row" justifyContent="flex-end">
               <AnimateButton>
               <Button
-  variant="contained"
-  color="error"
-  onClick={() => setActiveStep(0)}
-  sx={{ my: 3, display: 'flex', justifyContent: 'center' }}
->
-  Início do Procedimento
-</Button>
+                variant="contained"
+                color="error"
+                onClick={() => setActiveStep(0)}
+                sx={{ my: 3, display: 'flex', justifyContent: 'center' }}>
+                Início do Procedimento
+              </Button>
               </AnimateButton>
             </Stack>
           </>
