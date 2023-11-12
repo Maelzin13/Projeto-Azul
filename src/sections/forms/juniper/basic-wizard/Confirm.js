@@ -41,8 +41,8 @@ export default function Confirmando() {
 
       {/* Right side */}
       <Grid item xs={6}>
-        <MainCard title="Procedimentos" sx={{ height: '100%' }}>
-          <Typography variant="h6">Procedimentos</Typography>
+        <MainCard title="<strong>Procedimentos</strong>" sx={{ height: '100%' }}>
+          <Typography variant="h6"><strong>Procedimentos</strong></Typography>
           <Typography variant="caption" color="textSecondary">
             This is card description
           </Typography>

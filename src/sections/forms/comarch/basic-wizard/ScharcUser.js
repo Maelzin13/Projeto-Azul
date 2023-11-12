@@ -44,7 +44,7 @@ export default function ScharcUser() {
       <Grid item xs={6}>
         <MainCard sx={{ height: '100%', textAlign: 'center', borderRadius: '25px' }}>
           <Typography variant="h6" style={{ fontSize: '20px' }}>
-            Procedimentos
+            <strong>Procedimentos</strong>
           </Typography>
           <hr></hr>
           <Typography variant="body1">
@@ -56,7 +56,7 @@ export default function ScharcUser() {
           </Typography>
           <br />
           <Typography>
-            <strong>(Lembrando que o user só pode efetuar o reset e desbloqueio se estiver ATIVO).</strong>
+            <strong>Lembrando que o user só pode efetuar o reset e desbloqueio se estiver ATIVO.</strong>
           </Typography>
         </MainCard>
       </Grid>

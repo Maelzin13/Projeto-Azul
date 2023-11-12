@@ -43,10 +43,10 @@ export default function Reset() {
       <Grid item xs={6}>
         <MainCard sx={{ height: '100%', textAlign: 'center', borderRadius: '25px' }}>
           <Typography variant="h6" style={{ fontSize: '20px' }}>
-            Procedimentos
+            <strong>Procedimentos</strong>
           </Typography>
           <hr></hr>
-          <Typography variant="body1">Digite nova senha, clicar em Salva</Typography>
+          <Typography variant="body1">Digite nova senha, e clica em salvar</Typography>
         </MainCard>
       </Grid>
     </Grid>

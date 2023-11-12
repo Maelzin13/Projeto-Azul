@@ -44,11 +44,16 @@ export default function User() {
       <Grid item xs={6}>
         <MainCard sx={{ height: '100%', textAlign: 'center', borderRadius: '25px' }}>
           <Typography variant="h6" style={{ fontSize: '20px' }}>
-            Procedimentos
+            <strong>Procedimentos</strong>
           </Typography>
           <hr></hr>
           <Typography variant="body1">
-            Busque o usuário por algum dos critérios de busca existentes (user ou RE) e pressione Buscar.
+            Busque o usuário por algm dos critérios a baixo
+            <br></br>
+            <br></br>
+            <strong>Tripulante:</strong> RE ou login ou nome completo.<br></br>
+            <strong>Terceiro:</strong> CPF, Login ou nome completo.
+            
           </Typography>
           <br />
           <Typography>Selecione o link Status no usuário que se deseja Resetar</Typography>
