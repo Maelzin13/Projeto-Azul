@@ -31,6 +31,7 @@ export default function User() {
             layout="fixed"
             width={matchDownSM ? 350 : 365}
             height={matchDownSM ? 325 : 370}
+            quality={100}
             style={{
               objectFit: 'cover',
               borderRadius: '25px'

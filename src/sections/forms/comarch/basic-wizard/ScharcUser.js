@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import { Grid, Typography } from '@mui/material';
 import MainCard from 'components/MainCard';
 import { Divider, useMediaQuery } from '../../../../../node_modules/@mui/material/index';
@@ -10,7 +9,7 @@ export default function ScharcUser() {
   const theme = useTheme();
   const matchDownSM = useMediaQuery(theme.breakpoints.down('sm'));
   return (
-    <Grid container spacing={3} style={{ height: '100%' }}>
+    <Grid container spacing={3} style={{ height: '200%' }}>
       {/* Left side */}
       <Grid item xs={6}>
         <div
@@ -30,8 +29,9 @@ export default function ScharcUser() {
             src={comarch}
             alt="mantis"
             layout="fixed"
-            width={matchDownSM ? 350 : 365}
-            height={matchDownSM ? 325 : 370}
+            width={matchDownSM ? 380 : 395}
+            height={matchDownSM ? 365 : 390}
+            quality={85}
             style={{
               objectFit: 'cover',
               borderRadius: '25px'

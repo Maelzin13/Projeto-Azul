@@ -61,12 +61,18 @@ const Comarch = () => {
 
   return (
     <MainCard
-      sx={{ height: '100%' }}
+      sx={{
+        height: '100%',
+        width: '100%'
+
+        // Centraliza verticalmente
+      }}
       style={{
         background: 'rgba(0, 0, 0, 0.10)',
         boxShadow:
           'rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -5px 5px',
-        borderRadius: '25px'
+        borderRadius: '10px',
+        height: '100%'
       }}
     >
       <Stepper activeStep={activeStep} sx={{ pt: 3, pb: 5 }}>
@@ -84,13 +90,14 @@ const Comarch = () => {
             </Typography>
             <Stack direction="row" justifyContent="center">
               <AnimateButton>
-              <Button
-                variant="contained"
-                color="error"
-                onClick={() => setActiveStep(0)}
-                sx={{ my: 3, display: 'flex', justifyContent: 'center' }}>
-                Início do Procedimento
-              </Button>
+                <Button
+                  variant="contained"
+                  color="error"
+                  onClick={() => setActiveStep(0)}
+                  sx={{ my: 3, display: 'flex', justifyContent: 'center' }}
+                >
+                  Início do Procedimento
+                </Button>
               </AnimateButton>
             </Stack>
           </>

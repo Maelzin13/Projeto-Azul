@@ -9,7 +9,7 @@ export default function AceesComarch() {
   const theme = useTheme();
   const matchDownSM = useMediaQuery(theme.breakpoints.down('sm'));
   return (
-    <Grid container spacing={3} style={{ height: '100%' }}>
+    <Grid container spacing={3} style={{ height: '200%' }}>
       {/* Left side */}
       <Grid item xs={6}>
         <div

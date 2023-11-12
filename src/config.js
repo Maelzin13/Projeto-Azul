@@ -5,7 +5,7 @@ export const facebookColor = '#3b5998';
 export const linkedInColor = '#0e76a8';
 
 export const HORIZONTAL_MAX_ITEM = 6;
-export const DEFAULT_PATH = '/dashboard/analytics';
+export const DEFAULT_PATH = '/dashboard/default';
 
 export const ThemeMode = {
   LIGHT: 'light',
