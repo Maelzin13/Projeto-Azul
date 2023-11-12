@@ -82,7 +82,7 @@ const Comarch = () => {
             <Typography variant="h5" gutterBottom sx={{ textAlign: 'center' }}>
               Caso não tenha entendido, fique à vontade para ver o procedimento novamente
             </Typography>
-            <Stack direction="row" justifyContent="flex-end">
+            <Stack direction="row" justifyContent="center">
               <AnimateButton>
               <Button
                 variant="contained"

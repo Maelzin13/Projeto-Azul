@@ -51,7 +51,7 @@ const config = {
    * 'vertical' (default) - MenuOrientation.VERTICAL
    * 'horizontal' - MenuOrientation.HORIZONTAL
    */
-  menuOrientation: MenuOrientation.VERTICAL,
+  menuOrientation: MenuOrientation.HORIZONTAL,
 
   /**
    * the props used for show mini variant drawer
