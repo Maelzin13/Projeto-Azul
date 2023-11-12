@@ -1,6 +1,6 @@
 import { Grid, Typography } from '@mui/material';
 import MainCard from 'components/MainCard';
-import { Divider, useMediaQuery } from '../../../../../node_modules/@mui/material/index';
+import { useMediaQuery } from '../../../../../node_modules/@mui/material/index';
 import Image from 'next/legacy/image';
 import { useTheme } from '@mui/material/styles';
 
@@ -29,8 +29,9 @@ export default function Reset() {
             src={comarch}
             alt="mantis"
             layout="fixed"
-            width={matchDownSM ? 350 : 365}
-            height={matchDownSM ? 325 : 370}
+            width={matchDownSM ? 460 : 475}
+            height={matchDownSM ? 445 : 480}
+            quality={85}
             style={{
               objectFit: 'cover',
               borderRadius: '25px'
