@@ -43,18 +43,18 @@ export default function AceesComarch() {
       {/* Right side */}
       <Grid item xs={6}>
         <MainCard sx={{ height: '100%', textAlign: 'center', borderRadius: '25px' }}>
-          <Typography variant="h6" style={{ fontSize: '20px' }}>
+          <Typography variant="h6" style={{ fontSize: '17px' }}>
             Procedimentos
           </Typography>
           <hr></hr>
-          <Typography variant="body1">
+          <Typography variant="body1" style={{ fontSize: '17px' }}>
             Acesse o sistema através do link:{' '}
             <a href="https://abrir.link/QGRpL" target="_blank" rel="noopener noreferrer">
               Comarch
             </a>
           </Typography>
           <br />
-          <Typography>Digite o login e a senha no campo &quot;BA&quot;.</Typography>
+          <Typography style={{ fontSize: '17px' }}>Digite o login e a senha no campo &quot;BA&quot;.</Typography>
         </MainCard>
       </Grid>
     </Grid>
