@@ -63,9 +63,7 @@ const Comarch = () => {
     <MainCard
       sx={{
         height: '100%',
-        width: '100%'
-
-        // Centraliza verticalmente
+        width: '125%'
       }}
       style={{
         background: 'rgba(0, 0, 0, 0.10)',

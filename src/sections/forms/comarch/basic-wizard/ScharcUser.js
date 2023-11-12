@@ -1,6 +1,6 @@
 import { Grid, Typography } from '@mui/material';
 import MainCard from 'components/MainCard';
-import { Divider, useMediaQuery } from '../../../../../node_modules/@mui/material/index';
+import { useMediaQuery } from '../../../../../node_modules/@mui/material/index';
 import Image from 'next/legacy/image';
 import { useTheme } from '@mui/material/styles';
 
@@ -29,8 +29,8 @@ export default function ScharcUser() {
             src={comarch}
             alt="mantis"
             layout="fixed"
-            width={matchDownSM ? 380 : 395}
-            height={matchDownSM ? 365 : 390}
+            width={matchDownSM ? 460 : 475}
+            height={matchDownSM ? 445 : 480}
             quality={85}
             style={{
               objectFit: 'cover',
@@ -51,7 +51,6 @@ export default function ScharcUser() {
             Na aba Adiministração vá em Usuarios, Encontrar Usuarios.
             <br></br>
             <br></br>
-
             Acesse o campo de Usuario faça a sua pesquisa.
           </Typography>
           <br />
