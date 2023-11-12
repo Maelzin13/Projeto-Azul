@@ -44,10 +44,23 @@ export default function Reset() {
       <Grid item xs={6}>
         <MainCard sx={{ height: '100%', textAlign: 'center', borderRadius: '25px' }}>
           <Typography variant="h6" style={{ fontSize: '20px' }}>
-            <strong>Procedimentos</strong>
+            <strong><strong>Procedimentos</strong></strong>
           </Typography>
           <hr></hr>
-          <Typography variant="body1">Digite nova senha, e clica em salvar</Typography>
+          <br></br>
+          <Typography variant="body1">Digite a senha nova e confirme, depois clique em <strong>Salvar.</strong></Typography>
+          <br></br>
+          <br></br>
+          <Typography>
+           <h2><strong>Padrões de senha Comarch</strong></h2>
+            <Typography>
+              <br></br>
+              <li>Primeira letra do nome <strong>Maiuscula</strong></li>
+              <li>Segundo nome</li>
+              <li>Dois digitos do RE/CPF</li> 
+              <li>Dois caracteres Especiais </li>
+            </Typography>
+          </Typography>
         </MainCard>
       </Grid>
     </Grid>
