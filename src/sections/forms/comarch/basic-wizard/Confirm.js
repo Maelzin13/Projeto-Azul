@@ -44,16 +44,18 @@ export default function Confirmando() {
       <Grid item xs={6}>
         <MainCard sx={{ height: '100%', textAlign: 'center', borderRadius: '25px' }}>
           <Typography variant="h6" style={{ fontSize: '17' }}>
-            Procedimentos
+            <strong>  Procedimentos </strong>
           </Typography>
           <hr></hr>
+          <br></br>
           <Typography variant="body1" style={{ fontSize: '17' }}>
-            Acesse o sistema através do link:{' '}
-            <a href="https://abrir.link/QGRpL" target="_blank" rel="noopener noreferrer">
-              Comarch
-            </a>
-            <br />
-            Digite o login e a senha no campo &quot;BA&quot;
+            Clique em ok e mande a senha no e-mail <strong color='red'>COORPORATIVO</strong> da Tripulante/Terceira.
+          </Typography>
+          <br></br>
+          <Typography>
+            <strong>Script para o e-mail: </strong>
+            <br></br>
+            Olá! Segue a sua nova senha do Comarch: Senha123*
           </Typography>
         </MainCard>
       </Grid>
