@@ -50,15 +50,15 @@ export default function ScharcUser() {
             </strong>
           </Typography>
           <hr></hr>
+          <br></br>
           <Typography variant="body1">
-            Na aba Adiministração vá em Usuarios, Encontrar Usuarios.
-            <br></br>
-            <br></br>
-            Acesse o campo de Usuario faça a sua pesquisa.
+            Acessar tabelas mestres no seguinte caminho      
           </Typography>
-          <br />
           <Typography>
-            <strong>Lembrando que o user só pode efetuar o reset e desbloqueio se estiver ATIVO.</strong>
+            <br></br>
+            <li>
+              <strong>Usuarios de la intranet &rarr; Configuración de usuario.</strong>
+            </li>
           </Typography>
         </MainCard>
       </Grid>
