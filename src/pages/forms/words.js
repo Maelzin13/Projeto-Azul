@@ -2,7 +2,7 @@ import { Grid } from '@mui/material';
 
 import Layout from 'layout';
 import Page from 'components/Page';
-import WordTracer from 'sections/forms/word-tracer/basic-wizard/index';
+import WordTracer from 'sections/forms/word-tracer/words/index';
 
 const WordTracerTela = () => (
   <Page title="Forms Wizard">

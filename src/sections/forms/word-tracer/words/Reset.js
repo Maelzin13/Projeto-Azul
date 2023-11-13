@@ -4,12 +4,12 @@ import { useMediaQuery } from '../../../../../node_modules/@mui/material/index';
 import Image from 'next/legacy/image';
 import { useTheme } from '@mui/material/styles';
 
-const comarch = '/assets/images/maintenance/Comarch/passo_2.png';
-export default function ScharcUser() {
+const word = '/assets/images/maintenance/Wordtracer/passo_5.png';
+export default function Reset() {
   const theme = useTheme();
   const matchDownSM = useMediaQuery(theme.breakpoints.down('sm'));
   return (
-    <Grid container spacing={3} style={{ height: '200%' }}>
+    <Grid container spacing={3} style={{ height: '100%' }}>
       {/* Left side */}
       <Grid item xs={6}>
         <div
@@ -26,7 +26,7 @@ export default function ScharcUser() {
           }}
         >
           <Image
-            src={comarch}
+            src={word}
             alt="mantis"
             layout="fixed"
             width={matchDownSM ? 460 : 475}
@@ -50,12 +50,29 @@ export default function ScharcUser() {
           </Typography>
           <hr></hr>
           <br></br>
+          <Typography variant="body1">
+            Inserir a senha em <strong>&rarr; New Password &larr;</strong>
+          </Typography>
+          <br></br>
+          Segue a baixo o padrao de senha.
+          <br />
+          <br />
           <li>
-            Clicar em:{' '}
-            <i>
-              <strong>Settings</strong> &rarr; <strong>Users</strong> &rarr; <strong>Search</strong> &rarr; Users
-            </i>
+            <strong>Password Tripulante:</strong> Primeiro letra do nome maiúsculo + último sobrenome minúsculo + primeiro número do RE +
+            caractere especial &quot;*&quot;.
           </li>
+          <br></br>
+          <strong>EXEMPLO: Psilva1*.</strong>
+          <br />
+          <br />
+          <li>
+            <strong>Passord Terceiro:</strong> Primeira letra do nome maiúsculo + último sobrenome minúsculo + primeiro número do RG ou CPF
+            + caractere especial.
+          </li>
+          <br />
+          <strong>EXEMPLO:</strong> Rflemming4.
+          <br />
+          <hr></hr>
         </MainCard>
       </Grid>
     </Grid>

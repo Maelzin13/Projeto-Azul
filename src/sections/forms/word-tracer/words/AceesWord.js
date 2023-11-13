@@ -4,8 +4,8 @@ import { useMediaQuery } from '../../../../../node_modules/@mui/material/index';
 import Image from 'next/legacy/image';
 import { useTheme } from '@mui/material/styles';
 
-const comarch = '/assets/images/maintenance/Comarch/Pastedimage.png';
-export default function AceesComarch() {
+const word = '/assets/images/maintenance/Wordtracer/passo_1.png';
+export default function AceesWord() {
   const theme = useTheme();
   const matchDownSM = useMediaQuery(theme.breakpoints.down('sm'));
   return (
@@ -26,7 +26,7 @@ export default function AceesComarch() {
           }}
         >
           <Image
-            src={comarch}
+            src={word}
             alt="login"
             layout="fixed"
             width={matchDownSM ? 460 : 475}

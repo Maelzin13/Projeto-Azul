@@ -4,7 +4,7 @@ import { Grid } from '@mui/material';
 // project imports
 import Layout from 'layout';
 import Page from 'components/Page';
-import Juniper from 'sections/forms/juniper/basic-wizard/index';
+import Juniper from 'sections/forms/juniper/junipers/index';
 
 // import ValidationWizard from 'sections/forms/wizard/validation-wizard';
 

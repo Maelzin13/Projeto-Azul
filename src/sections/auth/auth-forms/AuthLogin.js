@@ -38,8 +38,6 @@ import AnimateButton from 'components/@extended/AnimateButton';
 // assets
 import { EyeOutlined, EyeInvisibleOutlined } from '@ant-design/icons';
 
-const Auth0 = '/assets/images/icons/auth0.svg';
-const Cognito = '/assets/images/icons/aws-cognito.svg';
 const Google = '/assets/images/icons/google.svg';
 
 // ============================|| AWS CONNITO - LOGIN ||============================ //
@@ -220,37 +218,17 @@ const AuthLogin = ({ providers, csrfToken }) => {
             return (
               <Box key={provider.name} sx={{ width: '100%' }}>
                 {provider.id === 'google' && (
-                  <Button
-                    variant="outlined"
-                    color="secondary"
-                    fullWidth={!matchDownSM}
-                    startIcon={<Image src={Google} alt="Twitter" width={16} height={16} />}
-                    onClick={() => signIn(provider.id, { callbackUrl: DEFAULT_PATH })}
-                  >
-                    {!matchDownSM && 'Google'}
-                  </Button>
-                )}
-                {provider.id === 'auth0' && (
-                  <Button
-                    variant="outlined"
-                    color="secondary"
-                    fullWidth={!matchDownSM}
-                    startIcon={<Image src={Auth0} alt="Twitter" width={16} height={16} />}
-                    onClick={() => signIn(provider.id, { callbackUrl: DEFAULT_PATH })}
-                  >
-                    {!matchDownSM && 'Auth0'}
-                  </Button>
-                )}
-                {provider.id === 'cognito' && (
-                  <Button
-                    variant="outlined"
-                    color="secondary"
-                    fullWidth={!matchDownSM}
-                    startIcon={<Image src={Cognito} alt="Twitter" width={16} height={16} />}
-                    onClick={() => signIn(provider.id, { callbackUrl: DEFAULT_PATH })}
-                  >
-                    {!matchDownSM && 'Cognito'}
-                  </Button>
+                  <AnimateButton>
+                    <Button
+                      variant="outlined"
+                      color="secondary"
+                      fullWidth={!matchDownSM}
+                      startIcon={<Image src={Google} alt="Twitter" width={16} height={16} />}
+                      onClick={() => signIn(provider.id, { callbackUrl: DEFAULT_PATH })}
+                    >
+                      {!matchDownSM && 'Google'}
+                    </Button>
+                  </AnimateButton>
                 )}
               </Box>
             );

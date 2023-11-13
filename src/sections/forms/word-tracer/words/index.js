@@ -5,8 +5,9 @@ import { Button, Step, Stepper, StepLabel, Stack, Typography } from '@mui/materi
 
 import MainCard from 'components/MainCard';
 import AnimateButton from 'components/@extended/AnimateButton';
+
 // project imports
-import AceesComarch from './AceesComarch';
+import AceesWord from './AceesWord';
 import ScharcUser from './ScharcUser';
 import User from './User';
 import AlterandoPass from './AlterandoPass';
@@ -14,12 +15,19 @@ import Reset from './Reset';
 import Confirmando from './Confirm';
 
 // step options
-const steps = ['Acess. WorldTracer', 'Encontrando User', 'Localizando User', 'Alterando password', 'Reset do password', 'Confirmando Reset'];
+const steps = [
+  'Acess. WorldTracer',
+  'Encontrando User',
+  'Localizando User',
+  'Alterando password',
+  'Reset do password',
+  'Confirmando Reset'
+];
 
 function getStepContent(step) {
   switch (step) {
     case 0:
-      return <AceesComarch />;
+      return <AceesWord />;
     case 1:
       return <ScharcUser />;
     case 2:

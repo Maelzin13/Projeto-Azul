@@ -4,7 +4,7 @@ import { useMediaQuery } from '../../../../../node_modules/@mui/material/index';
 import Image from 'next/legacy/image';
 import { useTheme } from '@mui/material/styles';
 
-const comarch = '/assets/images/maintenance/Comarch/passo_3.png';
+const word = '/assets/images/maintenance/Wordtracer/passo_3.png';
 export default function User() {
   const theme = useTheme();
   const matchDownSM = useMediaQuery(theme.breakpoints.down('sm'));
@@ -26,7 +26,7 @@ export default function User() {
           }}
         >
           <Image
-            src={comarch}
+            src={word}
             alt="mantis"
             layout="fixed"
             width={matchDownSM ? 460 : 475}

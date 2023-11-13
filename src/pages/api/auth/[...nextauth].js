@@ -1,8 +1,6 @@
 // next
 import NextAuth from 'next-auth';
-import Auth0Provider from 'next-auth/providers/auth0';
 import CredentialsProvider from 'next-auth/providers/credentials';
-import CognitoProvider from 'next-auth/providers/cognito';
 import GoogleProvider from 'next-auth/providers/google';
 
 // third-party
@@ -20,18 +18,6 @@ export let users = [
 export default NextAuth({
   secret: process.env.NEXTAUTH_SECRET_KEY,
   providers: [
-    Auth0Provider({
-      name: 'Auth0',
-      clientId: process.env.REACT_APP_AUTH0_CLIENT_ID,
-      clientSecret: process.env.REACT_APP_AUTH0_CLIENT_SECRET,
-      issuer: `https://${process.env.REACT_APP_AUTH0_DOMAIN}`
-    }),
-    CognitoProvider({
-      name: 'Cognito',
-      clientId: process.env.REACT_APP_COGNITO_CLIENT_ID,
-      clientSecret: process.env.REACT_APP_COGNITO_CLIENT_SECRET,
-      issuer: `https://cognito-idp.${process.env.REACT_APP_COGNITO_REGION}.amazonaws.com/${process.env.REACT_APP_COGNITO_POOL_ID}`
-    }),
     GoogleProvider({
       name: 'Google',
       clientId: process.env.REACT_APP_GOOGLE_CLIENT_ID,
@@ -44,11 +30,6 @@ export default NextAuth({
         }
       }
     }),
-    // functionality provided for credentials based authentication is intentionally limited to discourage use of passwords due to the
-    // inherent security risks associated with them and the additional complexity associated with supporting usernames and passwords.
-    // We recommend to ignore credential based auth unless its super necessary
-    // Ref: https://next-auth.js.org/providers/credentials
-    // https://github.com/nextauthjs/next-auth/issues/3562
     CredentialsProvider({
       id: 'login',
       name: 'Login',

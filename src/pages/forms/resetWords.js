@@ -4,7 +4,7 @@ import Layout from 'layout';
 import { useRouter } from 'next/router';
 import { styled } from '@mui/system';
 const Background = styled('div')({
-  backgroundImage: "url('/assets/images/maintenance/img1Borrada.png')",
+  backgroundImage: "url('/assets/images/maintenance/img2Borrada.png')",
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'center',

@@ -2,7 +2,7 @@ import { Grid } from '@mui/material';
 
 import Layout from 'layout';
 import Page from 'components/Page';
-import Comarch from 'sections/forms/comarch/basic-wizard/index';
+import Comarch from 'sections/forms/comarch/comarchs/index';
 
 const ComarchTela = () => (
   <Page title="Forms Wizard">

@@ -4,8 +4,8 @@ import { useMediaQuery } from '../../../../../node_modules/@mui/material/index';
 import Image from 'next/legacy/image';
 import { useTheme } from '@mui/material/styles';
 
-const comarch = '/assets/images/maintenance/Comarch/passo_7.png';
-export default function Confirmando() {
+const word = '/assets/images/maintenance/Wordtracer/passo_4.png';
+export default function AlterandoPass() {
   const theme = useTheme();
   const matchDownSM = useMediaQuery(theme.breakpoints.down('sm'));
   return (
@@ -26,7 +26,7 @@ export default function Confirmando() {
           }}
         >
           <Image
-            src={comarch}
+            src={word}
             alt="mantis"
             layout="fixed"
             width={matchDownSM ? 460 : 475}
@@ -39,24 +39,15 @@ export default function Confirmando() {
           />
         </div>
       </Grid>
-
       {/* Right side */}
       <Grid item xs={6}>
         <MainCard sx={{ height: '100%', textAlign: 'center', borderRadius: '25px' }}>
-          <Typography variant="h6" style={{ fontSize: '17' }}>
-            <strong> Procedimentos </strong>
+          <Typography variant="h6" style={{ fontSize: '17px' }}>
+            <strong>Procedimentos</strong>
           </Typography>
           <hr></hr>
-          <br></br>
-          <Typography variant="body1" style={{ fontSize: '17' }}>
-            Clicar em <strong>Amend</strong> e <strong>Finish</strong>
-            <br></br>
-            <br></br>
-            <li>
-              Mande a senha no e-mail<strong> &rarr; COORPORATIVO&larr;</strong> do Tripulante/Terceiro.
-            </li>
-            <br></br>
-            <br></br>
+          <Typography variant="body1" style={{ fontSize: '17px' }}>
+            Ao localizar o tripulante e clicar em <strong>&rarr; Update &larr;</strong>
           </Typography>
         </MainCard>
       </Grid>

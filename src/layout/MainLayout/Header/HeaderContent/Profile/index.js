@@ -55,12 +55,6 @@ const Profile = () => {
 
   const handleLogout = () => {
     switch (provider) {
-      case 'auth0':
-        signOut({ callbackUrl: `${process.env.NEXTAUTH_URL}/api/auth/logout/auth0` });
-        break;
-      case 'cognito':
-        signOut({ callbackUrl: `${process.env.NEXTAUTH_URL}/api/auth/logout/cognito` });
-        break;
       default:
         signOut({ redirect: false });
     }
