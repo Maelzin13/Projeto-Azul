@@ -47,16 +47,12 @@ export default function ScharcUser() {
             <strong><strong>Procedimentos</strong></strong>
           </Typography>
           <hr></hr>
-          <Typography variant="body1">
-            Na aba Adiministração vá em Usuarios, Encontrar Usuarios.
-            <br></br>
-            <br></br>
-            Acesse o campo de Usuario faça a sua pesquisa.
-          </Typography>
-          <br />
-          <Typography>
-            <strong>Lembrando que o user só pode efetuar o reset e desbloqueio se estiver ATIVO.</strong>
-          </Typography>
+          <br></br>
+          <li>
+            Clicar em: <i>
+              <strong>Settings</strong> &rarr; <strong>Users</strong> &rarr; <strong>Search</strong> &rarr; Users
+          </i>
+          </li>
         </MainCard>
       </Grid>
     </Grid>

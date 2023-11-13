@@ -14,7 +14,7 @@ import Reset from './Reset';
 import Confirmando from './Confirm';
 
 // step options
-const steps = ['Acessos Comarch', 'Encontrando user', 'User Localizado', 'Alterando password', 'Reset do password', 'Confirmando Reset'];
+const steps = ['Acess. WorldTracer', 'Encontrando User', 'Localizando User', 'Alterando password', 'Reset do password', 'Confirmando Reset'];
 
 function getStepContent(step) {
   switch (step) {

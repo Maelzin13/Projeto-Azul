@@ -48,19 +48,31 @@ export default function Reset() {
           </Typography>
           <hr></hr>
           <br></br>
-          <Typography variant="body1">Digite a senha nova e confirme, depois clique em <strong>Salvar.</strong></Typography>
+          <Typography variant="body1">Inserir a senha em <strong>&rarr; New Password &larr;</strong></Typography>
+          <br></br>
+          Segue a baixo o padrao de senha.
           <br></br>
           <br></br>
-          <Typography>
-           <h2><strong>Padrões de senha Comarch</strong></h2>
-            <Typography>
-              <br></br>
-              <li>Primeira letra do nome <strong>Maiuscula</strong></li>
-              <li>Segundo nome</li>
-              <li>Dois digitos do RE/CPF</li> 
-              <li>Dois caracteres Especiais </li>
-            </Typography>
-          </Typography>
+          <li>
+            <strong>
+            Password Tripulante:
+            </strong> Primeiro letra do nome maiúsculo + último sobrenome minúsculo + primeiro número do RE + caractere especial "*".
+          </li>
+          <br></br>
+          <strong>EXEMPLO: Psilva1*.</strong>
+          <br></br>
+          <br></br>
+          <li>
+            <strong>
+            Passord Terceiro:
+            </strong> Primeira letra do nome maiúsculo + último sobrenome minúsculo + primeiro número do RG ou CPF + caractere especial.
+          </li>
+          <br></br>
+          <strong>
+            EXEMPLO: 
+          </strong> Rflemming4.
+          <br></br>
+          <hr></hr>
         </MainCard>
       </Grid>
     </Grid>

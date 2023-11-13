@@ -49,13 +49,14 @@ export default function Confirmando() {
           <hr></hr>
           <br></br>
           <Typography variant="body1" style={{ fontSize: '17' }}>
-            Clique em ok e mande a senha no e-mail <strong color='red'>COORPORATIVO</strong> da Tripulante/Terceira.
-          </Typography>
-          <br></br>
-          <Typography>
-            <strong>Script para o e-mail: </strong>
+          Clicar em <strong>Amend</strong> e <strong>Finish</strong>
             <br></br>
-            Olá! Segue a sua nova senha do Comarch: Senha123*
+            <br></br>
+          <li>
+            Mande a senha no e-mail<strong> &rarr; COORPORATIVO&larr;</strong> do Tripulante/Terceiro.
+          </li>
+          <br></br>
+          <br></br>
           </Typography>
         </MainCard>
       </Grid>

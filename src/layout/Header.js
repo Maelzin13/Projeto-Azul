@@ -99,9 +99,6 @@ const Header = ({ handleDrawerOpen, layout = 'landing', ...others }) => {
                   </Link>
                 </NextLink>
               )}
-              <Link className="header-link" color="white" href="https://codedthemes.gitbook.io/mantis/" target="_blank" underline="none">
-                Documentation
-              </Link>
               <Box sx={{ display: 'inline-block' }}>
                 <AnimateButton>
                   <Button

@@ -39,7 +39,6 @@ export default function AlterandoPass() {
           />
         </div>
       </Grid>
-
       {/* Right side */}
       <Grid item xs={6}>
         <MainCard sx={{ height: '100%', textAlign: 'center', borderRadius: '25px' }}>
@@ -48,7 +47,7 @@ export default function AlterandoPass() {
           </Typography>
           <hr></hr>
           <Typography variant="body1" style={{ fontSize: '17px' }}>
-            Selecione a opção Alterar a senha.
+          Ao localizar o tripulante e clicar em <strong>&rarr; Update &larr;</strong>
           </Typography>
         </MainCard>
       </Grid>

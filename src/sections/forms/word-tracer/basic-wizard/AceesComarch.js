@@ -49,12 +49,18 @@ export default function AceesComarch() {
           <hr></hr>
           <Typography variant="body1" style={{ fontSize: '17px' }}>
             Acesse o sistema através do link:{' '}
-            <a href="https://abrir.link/QGRpL" target="_blank" rel="noopener noreferrer">
-              Comarch
+            <a href="https://wtrweb.worldtracer.aero/WTRIdm" target="_blank" rel="noopener noreferrer">
+              WorldTracer.
             </a>
           </Typography>
           <br />
-          <Typography style={{ fontSize: '17px' }}>Digite o login e a senha no campo &quot;BA&quot;.</Typography>
+          <Typography style={{ fontSize: '17px' }}><li><strong>User ID: </strong>Inserir o login pessoal</li>
+          <li>
+            <strong>
+              Password: 
+            </strong> Senha individual
+          </li>
+          </Typography>
         </MainCard>
       </Grid>
     </Grid>

@@ -28,7 +28,7 @@ const ComarchReset = () => {
             <Button
               variant="contained"
               color="secondary"
-              onClick={() => router.replace('/forms/cormarch')}
+              onClick={() => router.replace('/forms/comarch')}
               style={{
                 textTransform: 'none',
                 borderRadius: 8,
