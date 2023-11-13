@@ -48,15 +48,10 @@ export default function User() {
           </Typography>
           <hr></hr>
           <Typography variant="body1">
-            Busque o usuário por algm dos critérios a baixo
             <br></br>
-            <br></br>
-            <strong>Tripulante:</strong> RE ou login ou nome completo.<br></br>
-            <strong>Terceiro:</strong> CPF, Login ou nome completo.
-            
+            Digiter login do usuário ou o <strong>Nome</strong> e clicar em filtrar.
           </Typography>
           <br />
-          <Typography>Selecione o link Status no usuário que se deseja Resetar</Typography>
         </MainCard>
       </Grid>
     </Grid>

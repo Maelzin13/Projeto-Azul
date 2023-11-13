@@ -48,19 +48,12 @@ export default function Reset() {
           </Typography>
           <hr></hr>
           <br></br>
-          <Typography variant="body1">Digite a senha nova e confirme, depois clique em <strong>Salvar.</strong></Typography>
-          <br></br>
-          <br></br>
-          <Typography>
-           <h2><strong>Padrões de senha Comarch</strong></h2>
-            <Typography>
-              <br></br>
-              <li>Primeira letra do nome <strong>Maiuscula</strong></li>
-              <li>Segundo nome</li>
-              <li>Dois digitos do RE/CPF</li> 
-              <li>Dois caracteres Especiais </li>
-            </Typography>
-          </Typography>
+            <strong>
+              <h3>
+              &rarr;  Clicar em guardar 	&larr;
+              </h3>
+            </strong>
+            Agora e so enviar a senha do e-mail <strong>COORPORATIVO</strong> da tripulante/terceira.
         </MainCard>
       </Grid>
     </Grid>

@@ -48,7 +48,16 @@ export default function AlterandoPass() {
           </Typography>
           <hr></hr>
           <Typography variant="body1" style={{ fontSize: '17px' }}>
-            Selecione a opção Alterar a senha.
+            <h2>Selecionar o usuário</h2>
+            <h4 color='red' background="red">Caso o usuario não esteja ativo, em hipótese alguma ativar.</h4>
+            <strong>
+              Neste caso, não realize o reset da senha e oriente que o mesmo procure pelo seu gestor direto.
+            </strong>
+            <br></br>
+            <br></br>
+            <li>
+              Caso esteja <strong>Ativo</strong>, digitar a nova senha em <strong>Cambiar Contraseña  </strong> e depois <strong> Confirmar Constrasenã </strong>
+            </li>
           </Typography>
         </MainCard>
       </Grid>
