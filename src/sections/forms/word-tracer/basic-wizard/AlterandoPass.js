@@ -47,7 +47,7 @@ export default function AlterandoPass() {
           </Typography>
           <hr></hr>
           <Typography variant="body1" style={{ fontSize: '17px' }}>
-          Ao localizar o tripulante e clicar em <strong>&rarr; Update &larr;</strong>
+            Ao localizar o tripulante e clicar em <strong>&rarr; Update &larr;</strong>
           </Typography>
         </MainCard>
       </Grid>

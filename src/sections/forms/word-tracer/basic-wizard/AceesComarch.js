@@ -54,12 +54,13 @@ export default function AceesComarch() {
             </a>
           </Typography>
           <br />
-          <Typography style={{ fontSize: '17px' }}><li><strong>User ID: </strong>Inserir o login pessoal</li>
-          <li>
-            <strong>
-              Password: 
-            </strong> Senha individual
-          </li>
+          <Typography style={{ fontSize: '17px' }}>
+            <li>
+              <strong>User ID: </strong>Inserir o login pessoal
+            </li>
+            <li>
+              <strong>Password:</strong> Senha individual
+            </li>
           </Typography>
         </MainCard>
       </Grid>

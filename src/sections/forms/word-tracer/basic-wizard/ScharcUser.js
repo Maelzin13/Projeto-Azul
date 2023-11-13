@@ -44,14 +44,17 @@ export default function ScharcUser() {
       <Grid item xs={6}>
         <MainCard sx={{ height: '100%', textAlign: 'center', borderRadius: '25px' }}>
           <Typography variant="h6" style={{ fontSize: '20px' }}>
-            <strong><strong>Procedimentos</strong></strong>
+            <strong>
+              <strong>Procedimentos</strong>
+            </strong>
           </Typography>
           <hr></hr>
           <br></br>
           <li>
-            Clicar em: <i>
+            Clicar em:{' '}
+            <i>
               <strong>Settings</strong> &rarr; <strong>Users</strong> &rarr; <strong>Search</strong> &rarr; Users
-          </i>
+            </i>
           </li>
         </MainCard>
       </Grid>

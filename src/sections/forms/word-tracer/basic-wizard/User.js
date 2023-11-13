@@ -42,13 +42,18 @@ export default function User() {
       <Grid item xs={6}>
         <MainCard sx={{ height: '100%', textAlign: 'center', borderRadius: '25px' }}>
           <Typography variant="h6" style={{ fontSize: '20px' }}>
-            <strong><strong>Procedimentos</strong></strong>
+            <strong>
+              <strong>Procedimentos</strong>
+            </strong>
           </Typography>
           <hr></hr>
-          <br></br>
+          <br />
+          <br />
           <Typography variant="body1">
             <li>
-            A buscar o Tripulante/Terceiro pode ser realizada pelo <strong>User ID (login)</strong>, ou pelo primeiro nome <strong>(First Name)</strong> ou ultimo nome <strong>(Last name)</strong>. Digitando os dados clicar em <strong>Submit.</strong>
+              A buscar o Tripulante/Terceiro pode ser realizada pelo <strong>User ID (login)</strong>, ou pelo primeiro nome{' '}
+              <strong>(First Name)</strong> ou ultimo nome <strong>(Last name)</strong>. Digitando os dados clicar em{' '}
+              <strong>Submit.</strong>
             </li>
           </Typography>
           <br />

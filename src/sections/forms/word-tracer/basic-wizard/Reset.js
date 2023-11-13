@@ -44,34 +44,34 @@ export default function Reset() {
       <Grid item xs={6}>
         <MainCard sx={{ height: '100%', textAlign: 'center', borderRadius: '25px' }}>
           <Typography variant="h6" style={{ fontSize: '20px' }}>
-            <strong><strong>Procedimentos</strong></strong>
+            <strong>
+              <strong>Procedimentos</strong>
+            </strong>
           </Typography>
           <hr></hr>
           <br></br>
-          <Typography variant="body1">Inserir a senha em <strong>&rarr; New Password &larr;</strong></Typography>
+          <Typography variant="body1">
+            Inserir a senha em <strong>&rarr; New Password &larr;</strong>
+          </Typography>
           <br></br>
           Segue a baixo o padrao de senha.
-          <br></br>
-          <br></br>
+          <br />
+          <br />
           <li>
-            <strong>
-            Password Tripulante:
-            </strong> Primeiro letra do nome maiúsculo + último sobrenome minúsculo + primeiro número do RE + caractere especial "*".
+            <strong>Password Tripulante:</strong> Primeiro letra do nome maiúsculo + último sobrenome minúsculo + primeiro número do RE +
+            caractere especial &quot;*&quot;.
           </li>
           <br></br>
           <strong>EXEMPLO: Psilva1*.</strong>
-          <br></br>
-          <br></br>
+          <br />
+          <br />
           <li>
-            <strong>
-            Passord Terceiro:
-            </strong> Primeira letra do nome maiúsculo + último sobrenome minúsculo + primeiro número do RG ou CPF + caractere especial.
+            <strong>Passord Terceiro:</strong> Primeira letra do nome maiúsculo + último sobrenome minúsculo + primeiro número do RG ou CPF
+            + caractere especial.
           </li>
-          <br></br>
-          <strong>
-            EXEMPLO: 
-          </strong> Rflemming4.
-          <br></br>
+          <br />
+          <strong>EXEMPLO:</strong> Rflemming4.
+          <br />
           <hr></hr>
         </MainCard>
       </Grid>

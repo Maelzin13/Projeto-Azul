@@ -44,19 +44,19 @@ export default function Confirmando() {
       <Grid item xs={6}>
         <MainCard sx={{ height: '100%', textAlign: 'center', borderRadius: '25px' }}>
           <Typography variant="h6" style={{ fontSize: '17' }}>
-            <strong>  Procedimentos </strong>
+            <strong> Procedimentos </strong>
           </Typography>
           <hr></hr>
           <br></br>
           <Typography variant="body1" style={{ fontSize: '17' }}>
-          Clicar em <strong>Amend</strong> e <strong>Finish</strong>
+            Clicar em <strong>Amend</strong> e <strong>Finish</strong>
             <br></br>
             <br></br>
-          <li>
-            Mande a senha no e-mail<strong> &rarr; COORPORATIVO&larr;</strong> do Tripulante/Terceiro.
-          </li>
-          <br></br>
-          <br></br>
+            <li>
+              Mande a senha no e-mail<strong> &rarr; COORPORATIVO&larr;</strong> do Tripulante/Terceiro.
+            </li>
+            <br></br>
+            <br></br>
           </Typography>
         </MainCard>
       </Grid>
