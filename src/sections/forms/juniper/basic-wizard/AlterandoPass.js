@@ -29,8 +29,9 @@ export default function AlterandoPass() {
             src={comarch}
             alt="mantis"
             layout="fixed"
-            width={matchDownSM ? 350 : 365}
-            height={matchDownSM ? 325 : 370}
+            width={matchDownSM ? 460 : 475}
+            height={matchDownSM ? 445 : 480}
+            quality={85}
             style={{
               objectFit: 'cover',
               borderRadius: '25px'
@@ -41,10 +42,13 @@ export default function AlterandoPass() {
 
       {/* Right side */}
       <Grid item xs={6}>
-        <MainCard title="<strong><strong>Procedimentos</strong></strong>" sx={{ height: '100%' }}>
-          <Typography variant="h6"><strong><strong>Procedimentos</strong></strong></Typography>
-          <Typography variant="caption" color="textSecondary">
-            This is card description
+        <MainCard sx={{ height: '100%', textAlign: 'center', borderRadius: '25px' }}>
+          <Typography variant="h6" style={{ fontSize: '17px' }}>
+            <strong>Procedimentos</strong>
+          </Typography>
+          <hr></hr>
+          <Typography variant="body1" style={{ fontSize: '17px' }}>
+            Selecione a opção Alterar a senha.
           </Typography>
         </MainCard>
       </Grid>

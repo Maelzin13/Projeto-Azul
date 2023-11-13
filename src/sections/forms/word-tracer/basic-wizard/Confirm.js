@@ -29,8 +29,9 @@ export default function Confirmando() {
             src={comarch}
             alt="mantis"
             layout="fixed"
-            width={matchDownSM ? 350 : 365}
-            height={matchDownSM ? 325 : 370}
+            width={matchDownSM ? 460 : 475}
+            height={matchDownSM ? 445 : 480}
+            quality={85}
             style={{
               objectFit: 'cover',
               borderRadius: '25px'
@@ -41,10 +42,20 @@ export default function Confirmando() {
 
       {/* Right side */}
       <Grid item xs={6}>
-        <MainCard title="<strong><strong>Procedimentos</strong></strong>" sx={{ height: '100%' }}>
-          <Typography variant="h6"><strong><strong>Procedimentos</strong></strong></Typography>
-          <Typography variant="caption" color="textSecondary">
-            This is card description
+        <MainCard sx={{ height: '100%', textAlign: 'center', borderRadius: '25px' }}>
+          <Typography variant="h6" style={{ fontSize: '17' }}>
+            <strong>  Procedimentos </strong>
+          </Typography>
+          <hr></hr>
+          <br></br>
+          <Typography variant="body1" style={{ fontSize: '17' }}>
+            Clique em ok e mande a senha no e-mail <strong color='red'>COORPORATIVO</strong> da Tripulante/Terceira.
+          </Typography>
+          <br></br>
+          <Typography>
+            <strong>Script para o e-mail: </strong>
+            <br></br>
+            Olá! Segue a sua nova senha do Comarch: Senha123*
           </Typography>
         </MainCard>
       </Grid>

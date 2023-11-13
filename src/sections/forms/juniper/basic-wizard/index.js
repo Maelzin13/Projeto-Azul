@@ -49,7 +49,19 @@ const Juniper = () => {
   };
 
   return (
-    <MainCard title="COMARCH">
+    <MainCard
+      sx={{
+        height: '100%',
+        width: '125%'
+      }}
+      style={{
+        background: 'rgba(0, 0, 0, 0.10)',
+        boxShadow:
+          'rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -5px 5px',
+        borderRadius: '10px',
+        height: '100%'
+      }}
+    >
       <Stepper activeStep={activeStep} sx={{ pt: 3, pb: 5 }}>
         {steps.map((label) => (
           <Step key={label}>
@@ -60,17 +72,18 @@ const Juniper = () => {
       <>
         {activeStep === steps.length ? (
           <>
-            <Typography variant="h5" gutterBottom>
-              Thank you for your order.
+            <Typography variant="h5" gutterBottom sx={{ textAlign: 'center' }}>
+              Caso não tenha entendido, fique à vontade para ver o procedimento novamente
             </Typography>
-            <Typography variant="subtitle1">
-              Your order number is #2001539. We have emailed your order confirmation, and will send you an update when your order has
-              shipped.
-            </Typography>
-            <Stack direction="row" justifyContent="flex-end">
+            <Stack direction="row" justifyContent="center">
               <AnimateButton>
-                <Button variant="contained" color="error" onClick={() => setActiveStep(0)} sx={{ my: 3, ml: 1 }}>
-                  Reset
+                <Button
+                  variant="contained"
+                  color="error"
+                  onClick={() => setActiveStep(0)}
+                  sx={{ my: 3, display: 'flex', justifyContent: 'center' }}
+                >
+                  Início do Procedimento
                 </Button>
               </AnimateButton>
             </Stack>
@@ -81,12 +94,12 @@ const Juniper = () => {
             <Stack direction="row" justifyContent={activeStep !== 0 ? 'space-between' : 'flex-end'}>
               {activeStep !== 0 && (
                 <Button variant="contained" color="success" onClick={handleBack} sx={{ my: 3, ml: 1 }}>
-                  
+                  Voltar
                 </Button>
               )}
               <AnimateButton>
                 <Button variant="contained" color="success" onClick={handleNext} sx={{ my: 3, ml: 1 }}>
-                  {activeStep === steps.length - 1 ? 'Place order' : 'Next'}
+                  {activeStep === steps.length - 1 ? 'Finalizar Procedimento' : 'Proximo'}
                 </Button>
               </AnimateButton>
             </Stack>

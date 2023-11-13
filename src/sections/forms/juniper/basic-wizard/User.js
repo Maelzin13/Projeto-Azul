@@ -29,8 +29,9 @@ export default function User() {
             src={comarch}
             alt="mantis"
             layout="fixed"
-            width={matchDownSM ? 350 : 365}
-            height={matchDownSM ? 325 : 370}
+            width={matchDownSM ? 460 : 475}
+            height={matchDownSM ? 445 : 480}
+            quality={85}
             style={{
               objectFit: 'cover',
               borderRadius: '25px'
@@ -41,11 +42,21 @@ export default function User() {
 
       {/* Right side */}
       <Grid item xs={6}>
-        <MainCard title="<strong><strong>Procedimentos</strong></strong>" sx={{ height: '100%' }}>
-          <Typography variant="h6"><strong><strong>Procedimentos</strong></strong></Typography>
-          <Typography variant="caption" color="textSecondary">
-            This is card description
+        <MainCard sx={{ height: '100%', textAlign: 'center', borderRadius: '25px' }}>
+          <Typography variant="h6" style={{ fontSize: '20px' }}>
+            <strong><strong>Procedimentos</strong></strong>
           </Typography>
+          <hr></hr>
+          <Typography variant="body1">
+            Busque o usuário por algm dos critérios a baixo
+            <br></br>
+            <br></br>
+            <strong>Tripulante:</strong> RE ou login ou nome completo.<br></br>
+            <strong>Terceiro:</strong> CPF, Login ou nome completo.
+            
+          </Typography>
+          <br />
+          <Typography>Selecione o link Status no usuário que se deseja Resetar</Typography>
         </MainCard>
       </Grid>
     </Grid>

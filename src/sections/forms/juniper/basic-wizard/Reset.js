@@ -29,8 +29,9 @@ export default function Reset() {
             src={comarch}
             alt="mantis"
             layout="fixed"
-            width={matchDownSM ? 350 : 365}
-            height={matchDownSM ? 325 : 370}
+            width={matchDownSM ? 460 : 475}
+            height={matchDownSM ? 445 : 480}
+            quality={85}
             style={{
               objectFit: 'cover',
               borderRadius: '25px'
@@ -41,10 +42,24 @@ export default function Reset() {
 
       {/* Right side */}
       <Grid item xs={6}>
-        <MainCard title="<strong><strong>Procedimentos</strong></strong>" sx={{ height: '100%' }}>
-          <Typography variant="h6"><strong><strong>Procedimentos</strong></strong></Typography>
-          <Typography variant="caption" color="textSecondary">
-            This is card description
+        <MainCard sx={{ height: '100%', textAlign: 'center', borderRadius: '25px' }}>
+          <Typography variant="h6" style={{ fontSize: '20px' }}>
+            <strong><strong>Procedimentos</strong></strong>
+          </Typography>
+          <hr></hr>
+          <br></br>
+          <Typography variant="body1">Digite a senha nova e confirme, depois clique em <strong>Salvar.</strong></Typography>
+          <br></br>
+          <br></br>
+          <Typography>
+           <h2><strong>Padrões de senha Comarch</strong></h2>
+            <Typography>
+              <br></br>
+              <li>Primeira letra do nome <strong>Maiuscula</strong></li>
+              <li>Segundo nome</li>
+              <li>Dois digitos do RE/CPF</li> 
+              <li>Dois caracteres Especiais </li>
+            </Typography>
           </Typography>
         </MainCard>
       </Grid>

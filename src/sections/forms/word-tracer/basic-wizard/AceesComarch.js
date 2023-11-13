@@ -9,7 +9,7 @@ export default function AceesComarch() {
   const theme = useTheme();
   const matchDownSM = useMediaQuery(theme.breakpoints.down('sm'));
   return (
-    <Grid container spacing={3} style={{ height: '100%' }}>
+    <Grid container spacing={3} style={{ height: '200%' }}>
       {/* Left side */}
       <Grid item xs={6}>
         <div
@@ -27,10 +27,11 @@ export default function AceesComarch() {
         >
           <Image
             src={comarch}
-            alt="mantis"
+            alt="login"
             layout="fixed"
-            width={matchDownSM ? 350 : 365}
-            height={matchDownSM ? 325 : 370}
+            width={matchDownSM ? 460 : 475}
+            height={matchDownSM ? 445 : 480}
+            quality={85}
             style={{
               objectFit: 'cover',
               borderRadius: '25px'
@@ -41,11 +42,19 @@ export default function AceesComarch() {
 
       {/* Right side */}
       <Grid item xs={6}>
-        <MainCard title="<strong><strong>Procedimentos</strong></strong>" sx={{ height: '100%' }}>
-          <Typography variant="h6"><strong><strong>Procedimentos</strong></strong></Typography>
-          <Typography variant="caption" color="textSecondary">
-            This is card description
+        <MainCard sx={{ height: '100%', textAlign: 'center', borderRadius: '25px' }}>
+          <Typography variant="h6" style={{ fontSize: '17px' }}>
+            <strong>Procedimentos</strong>
           </Typography>
+          <hr></hr>
+          <Typography variant="body1" style={{ fontSize: '17px' }}>
+            Acesse o sistema através do link:{' '}
+            <a href="https://abrir.link/QGRpL" target="_blank" rel="noopener noreferrer">
+              Comarch
+            </a>
+          </Typography>
+          <br />
+          <Typography style={{ fontSize: '17px' }}>Digite o login e a senha no campo &quot;BA&quot;.</Typography>
         </MainCard>
       </Grid>
     </Grid>
