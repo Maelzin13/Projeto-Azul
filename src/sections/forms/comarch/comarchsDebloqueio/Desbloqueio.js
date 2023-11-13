@@ -49,13 +49,12 @@ export default function Desbloqueio() {
           <hr></hr>
           <br></br>
           <Typography variant="body1" style={{ fontSize: '17' }}>
-            Clique em ok e mande a senha no e-mail <strong color="red">COORPORATIVO</strong> da Tripulante/Terceira.
-          </Typography>
-          <br></br>
-          <Typography>
-            <strong>Script para o e-mail: </strong>
-            <br></br>
-            Olá! Segue a sua nova senha do Comarch: Senha123*
+            <h3>
+              Clique na opção <strong>&rarr; Unblock login &larr; </strong>
+            </h3>
+            <h4>
+              Pronto! O usuário este desbloqueado!
+            </h4>
           </Typography>
         </MainCard>
       </Grid>
