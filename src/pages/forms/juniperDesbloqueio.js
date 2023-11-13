@@ -4,7 +4,7 @@ import { Grid } from '@mui/material';
 // project imports
 import Layout from 'layout';
 import Page from 'components/Page';
-import Juniper from 'sections/forms/juniper/junipers/index';
+import JuniperDesbloqueio from 'sections/forms/juniper/junipersDesbloqueio/index';
 
 // import ValidationWizard from 'sections/forms/wizard/validation-wizard';
 
@@ -14,7 +14,7 @@ const JuniperTela = () => (
   <Page title="Forms Wizard">
     <Grid container spacing={2.5} justifyContent="center">
       <Grid item xs={12} md={6} lg={7}>
-        <Juniper />
+        <JuniperDesbloqueio />
       </Grid>
       {/* <Grid item xs={12} md={6} lg={7}>
         <ValidationWizard />

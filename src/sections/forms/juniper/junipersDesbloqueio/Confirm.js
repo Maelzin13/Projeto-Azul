@@ -4,7 +4,7 @@ import { useMediaQuery } from '../../../../../node_modules/@mui/material/index';
 import Image from 'next/legacy/image';
 import { useTheme } from '@mui/material/styles';
 
-const juniper = '/assets/images/maintenance/Junipper/JuniperDesbloquearAcesso/passo_6.png';
+const juniper = '/assets/images/maintenance/Junipper/JuniperDesbloquearAcesso/passo_6.3.png';
 
 export default function Confirmando() {
   const theme = useTheme();

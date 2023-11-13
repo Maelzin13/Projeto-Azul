@@ -12,6 +12,8 @@ import User from './User';
 import AlterandoPass from './AlterandoPass';
 import Reset from './Reset';
 import Confirmando from './Confirm';
+import Confirmando1 from './Confirm1';
+import Confirmando2 from './Confirm2';
 
 // step options
 const steps = [
@@ -38,9 +40,9 @@ function getStepContent(step) {
     case 4:
       return <Reset />;
     case 5:
-      return <Confirmando />;
+      return <Confirmando1 />;
     case 6:
-      return <Confirmando />;
+      return <Confirmando2 />;
     case 7:
       return <Confirmando />;
     default:
@@ -50,7 +52,7 @@ function getStepContent(step) {
 
 // ==============================|| FORMS WIZARD - BASIC ||============================== //
 
-const Juniper = () => {
+const JuniperDesbloqueio = () => {
   const [activeStep, setActiveStep] = useState(0);
 
   const handleNext = () => {
@@ -123,4 +125,4 @@ const Juniper = () => {
   );
 };
 
-export default Juniper;
+export default JuniperDesbloqueio;
