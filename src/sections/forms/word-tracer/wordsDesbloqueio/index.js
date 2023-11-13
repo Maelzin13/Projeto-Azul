@@ -5,8 +5,9 @@ import { Button, Step, Stepper, StepLabel, Stack, Typography } from '@mui/materi
 
 import MainCard from 'components/MainCard';
 import AnimateButton from 'components/@extended/AnimateButton';
+
 // project imports
-import AceesJuniper from './AceesJuniper';
+import AceesWord from './AceesWord';
 import ScharcUser from './ScharcUser';
 import User from './User';
 import AlterandoPass from './AlterandoPass';
@@ -14,12 +15,19 @@ import Reset from './Reset';
 import Confirmando from './Confirm';
 
 // step options
-const steps = ['Acess Juniper', 'Encontrando user', 'Procurando User', 'Selecionando User', 'Reset do password'];
+const steps = [
+  'Acess. WorldTracer',
+  'Encontrando User',
+  'Localizando User',
+  'Alterando password',
+  'Reset do password',
+  'Confirmando Reset'
+];
 
 function getStepContent(step) {
   switch (step) {
     case 0:
-      return <AceesJuniper />;
+      return <AceesWord />;
     case 1:
       return <ScharcUser />;
     case 2:
@@ -37,7 +45,7 @@ function getStepContent(step) {
 
 // ==============================|| FORMS WIZARD - BASIC ||============================== //
 
-const Juniper = () => {
+const WordTracer = () => {
   const [activeStep, setActiveStep] = useState(0);
 
   const handleNext = () => {
@@ -110,4 +118,4 @@ const Juniper = () => {
   );
 };
 
-export default Juniper;
+export default WordTracer;

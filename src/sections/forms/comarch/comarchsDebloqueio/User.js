@@ -4,9 +4,8 @@ import { useMediaQuery } from '../../../../../node_modules/@mui/material/index';
 import Image from 'next/legacy/image';
 import { useTheme } from '@mui/material/styles';
 
-const word = '/assets/images/maintenance/Wordtracer/passo_4.png';
-
-export default function AlterandoPass() {
+const comarch = '/assets/images/maintenance/Comarch/passo_3.png';
+export default function User() {
   const theme = useTheme();
   const matchDownSM = useMediaQuery(theme.breakpoints.down('sm'));
   return (
@@ -27,7 +26,7 @@ export default function AlterandoPass() {
           }}
         >
           <Image
-            src={word}
+            src={comarch}
             alt="mantis"
             layout="fixed"
             width={matchDownSM ? 460 : 475}
@@ -40,16 +39,24 @@ export default function AlterandoPass() {
           />
         </div>
       </Grid>
+
       {/* Right side */}
       <Grid item xs={6}>
         <MainCard sx={{ height: '100%', textAlign: 'center', borderRadius: '25px' }}>
-          <Typography variant="h6" style={{ fontSize: '17px' }}>
-            <strong>Procedimentos</strong>
+          <Typography variant="h6" style={{ fontSize: '20px' }}>
+            <strong><strong>Procedimentos</strong></strong>
           </Typography>
           <hr></hr>
-          <Typography variant="body1" style={{ fontSize: '17px' }}>
-            Ao localizar o tripulante e clicar em <strong>&rarr; Update &larr;</strong>
+          <Typography variant="body1">
+            Busque o usuário por algm dos critérios a baixo
+            <br></br>
+            <br></br>
+            <strong>Tripulante:</strong> RE ou login ou nome completo.<br></br>
+            <strong>Terceiro:</strong> CPF, Login ou nome completo.
+            
           </Typography>
+          <br />
+          <Typography>Selecione o link Status no usuário que se deseja Resetar</Typography>
         </MainCard>
       </Grid>
     </Grid>

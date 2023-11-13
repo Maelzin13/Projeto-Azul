@@ -14,7 +14,16 @@ import Reset from './Reset';
 import Confirmando from './Confirm';
 
 // step options
-const steps = ['Acess Juniper', 'Encontrando user', 'Procurando User', 'Selecionando User', 'Reset do password'];
+const steps = [
+  'Acessos Juniper',
+  'Encontrando user',
+  'User Localizado',
+  'Alterando password',
+  'Reset do password',
+  'Confirmando Reset',
+  'Confirmando Reset',
+  'Confirmando Reset'
+];
 
 function getStepContent(step) {
   switch (step) {
@@ -29,6 +38,10 @@ function getStepContent(step) {
     case 4:
       return <Reset />;
     case 5:
+      return <Confirmando />;
+    case 6:
+      return <Confirmando />;
+    case 7:
       return <Confirmando />;
     default:
       throw new Error('Unknown step');

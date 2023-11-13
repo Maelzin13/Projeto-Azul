@@ -4,13 +4,13 @@ import { useMediaQuery } from '../../../../../node_modules/@mui/material/index';
 import Image from 'next/legacy/image';
 import { useTheme } from '@mui/material/styles';
 
-const word = '/assets/images/maintenance/Wordtracer/passo_4.png';
+const juniper = '/assets/images/maintenance/Junipper/JuniperDesbloquearAcesso/passo_1.png';
 
-export default function AlterandoPass() {
+export default function AceesJuniper() {
   const theme = useTheme();
   const matchDownSM = useMediaQuery(theme.breakpoints.down('sm'));
   return (
-    <Grid container spacing={3} style={{ height: '100%' }}>
+    <Grid container spacing={3} style={{ height: '200%' }}>
       {/* Left side */}
       <Grid item xs={6}>
         <div
@@ -27,8 +27,8 @@ export default function AlterandoPass() {
           }}
         >
           <Image
-            src={word}
-            alt="mantis"
+            src={juniper}
+            alt="login"
             layout="fixed"
             width={matchDownSM ? 460 : 475}
             height={matchDownSM ? 445 : 480}
@@ -40,6 +40,7 @@ export default function AlterandoPass() {
           />
         </div>
       </Grid>
+
       {/* Right side */}
       <Grid item xs={6}>
         <MainCard sx={{ height: '100%', textAlign: 'center', borderRadius: '25px' }}>
@@ -48,8 +49,13 @@ export default function AlterandoPass() {
           </Typography>
           <hr></hr>
           <Typography variant="body1" style={{ fontSize: '17px' }}>
-            Ao localizar o tripulante e clicar em <strong>&rarr; Update &larr;</strong>
+            Acesse o sistema através do link:{' '}
+            <a href="https://abrir.link/QGRpL" target="_blank" rel="noopener noreferrer">
+              Comarch
+            </a>
           </Typography>
+          <br />
+          <Typography style={{ fontSize: '17px' }}>Digite o login e a senha no campo &quot;BA&quot;.</Typography>
         </MainCard>
       </Grid>
     </Grid>

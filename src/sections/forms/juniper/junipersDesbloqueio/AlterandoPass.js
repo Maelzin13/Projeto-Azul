@@ -4,7 +4,7 @@ import { useMediaQuery } from '../../../../../node_modules/@mui/material/index';
 import Image from 'next/legacy/image';
 import { useTheme } from '@mui/material/styles';
 
-const word = '/assets/images/maintenance/Wordtracer/passo_4.png';
+const juniper = '/assets/images/maintenance/Junipper/JuniperDesbloquearAcesso/passo_4.png';
 
 export default function AlterandoPass() {
   const theme = useTheme();
@@ -27,7 +27,7 @@ export default function AlterandoPass() {
           }}
         >
           <Image
-            src={word}
+            src={juniper}
             alt="mantis"
             layout="fixed"
             width={matchDownSM ? 460 : 475}
@@ -40,6 +40,7 @@ export default function AlterandoPass() {
           />
         </div>
       </Grid>
+
       {/* Right side */}
       <Grid item xs={6}>
         <MainCard sx={{ height: '100%', textAlign: 'center', borderRadius: '25px' }}>
@@ -48,7 +49,7 @@ export default function AlterandoPass() {
           </Typography>
           <hr></hr>
           <Typography variant="body1" style={{ fontSize: '17px' }}>
-            Ao localizar o tripulante e clicar em <strong>&rarr; Update &larr;</strong>
+            Selecione a opção Alterar a senha.
           </Typography>
         </MainCard>
       </Grid>

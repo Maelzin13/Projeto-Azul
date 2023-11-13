@@ -4,9 +4,9 @@ import { useMediaQuery } from '../../../../../node_modules/@mui/material/index';
 import Image from 'next/legacy/image';
 import { useTheme } from '@mui/material/styles';
 
-const word = '/assets/images/maintenance/Wordtracer/passo_4.png';
+const juniper = '/assets/images/maintenance/Junipper/JuniperDesbloquearAcesso/passo_5.png';
 
-export default function AlterandoPass() {
+export default function Reset() {
   const theme = useTheme();
   const matchDownSM = useMediaQuery(theme.breakpoints.down('sm'));
   return (
@@ -27,7 +27,7 @@ export default function AlterandoPass() {
           }}
         >
           <Image
-            src={word}
+            src={juniper}
             alt="mantis"
             layout="fixed"
             width={matchDownSM ? 460 : 475}
@@ -40,15 +40,35 @@ export default function AlterandoPass() {
           />
         </div>
       </Grid>
+
       {/* Right side */}
       <Grid item xs={6}>
         <MainCard sx={{ height: '100%', textAlign: 'center', borderRadius: '25px' }}>
-          <Typography variant="h6" style={{ fontSize: '17px' }}>
-            <strong>Procedimentos</strong>
+          <Typography variant="h6" style={{ fontSize: '20px' }}>
+            <strong>
+              <strong>Procedimentos</strong>
+            </strong>
           </Typography>
           <hr></hr>
-          <Typography variant="body1" style={{ fontSize: '17px' }}>
-            Ao localizar o tripulante e clicar em <strong>&rarr; Update &larr;</strong>
+          <br></br>
+          <Typography variant="body1">
+            Digite a senha nova e confirme, depois clique em <strong>Salvar.</strong>
+          </Typography>
+          <br></br>
+          <br></br>
+          <Typography>
+            <h2>
+              <strong>Padrões de senha Comarch</strong>
+            </h2>
+            <Typography>
+              <br></br>
+              <li>
+                Primeira letra do nome <strong>Maiuscula</strong>
+              </li>
+              <li>Segundo nome</li>
+              <li>Dois digitos do RE/CPF</li>
+              <li>Dois caracteres Especiais </li>
+            </Typography>
           </Typography>
         </MainCard>
       </Grid>

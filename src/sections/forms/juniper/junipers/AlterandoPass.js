@@ -4,7 +4,8 @@ import { useMediaQuery } from '../../../../../node_modules/@mui/material/index';
 import Image from 'next/legacy/image';
 import { useTheme } from '@mui/material/styles';
 
-const comarch = '/assets/images/maintenance/Comarch/passo_4.png';
+const juniper = '/assets/images/maintenance/Junipper/JuniperResetarAcesso/passo_4.png';
+
 export default function AlterandoPass() {
   const theme = useTheme();
   const matchDownSM = useMediaQuery(theme.breakpoints.down('sm'));
@@ -26,7 +27,7 @@ export default function AlterandoPass() {
           }}
         >
           <Image
-            src={comarch}
+            src={juniper}
             alt="mantis"
             layout="fixed"
             width={matchDownSM ? 460 : 475}

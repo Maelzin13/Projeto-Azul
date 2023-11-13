@@ -6,29 +6,26 @@ import { Button, Step, Stepper, StepLabel, Stack, Typography } from '@mui/materi
 import MainCard from 'components/MainCard';
 import AnimateButton from 'components/@extended/AnimateButton';
 // project imports
-import AceesJuniper from './AceesJuniper';
+import AceesComarch from './AceesComarch';
 import ScharcUser from './ScharcUser';
 import User from './User';
-import AlterandoPass from './AlterandoPass';
-import Reset from './Reset';
+import Desbloqueio from './Desbloqueio';
 import Confirmando from './Confirm';
 
 // step options
-const steps = ['Acess Juniper', 'Encontrando user', 'Procurando User', 'Selecionando User', 'Reset do password'];
+const steps = ['Acessos Comarch', 'Encontrando user', 'User Localizado', 'Debloqueio User', 'Confirmando Reset'];
 
 function getStepContent(step) {
   switch (step) {
     case 0:
-      return <AceesJuniper />;
+      return <AceesComarch />;
     case 1:
       return <ScharcUser />;
     case 2:
       return <User />;
     case 3:
-      return <AlterandoPass />;
+      return <Desbloqueio />;
     case 4:
-      return <Reset />;
-    case 5:
       return <Confirmando />;
     default:
       throw new Error('Unknown step');
@@ -37,7 +34,7 @@ function getStepContent(step) {
 
 // ==============================|| FORMS WIZARD - BASIC ||============================== //
 
-const Juniper = () => {
+const ComarchDebloqueio = () => {
   const [activeStep, setActiveStep] = useState(0);
 
   const handleNext = () => {
@@ -110,4 +107,4 @@ const Juniper = () => {
   );
 };
 
-export default Juniper;
+export default ComarchDebloqueio;

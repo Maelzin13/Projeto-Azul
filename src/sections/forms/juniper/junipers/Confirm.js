@@ -4,7 +4,8 @@ import { useMediaQuery } from '../../../../../node_modules/@mui/material/index';
 import Image from 'next/legacy/image';
 import { useTheme } from '@mui/material/styles';
 
-const comarch = '/assets/images/maintenance/Comarch/passo_7.png';
+const juniper = '/assets/images/maintenance/Junipper/JuniperResetarAcesso/passo_6.png';
+
 export default function Confirmando() {
   const theme = useTheme();
   const matchDownSM = useMediaQuery(theme.breakpoints.down('sm'));
@@ -26,7 +27,7 @@ export default function Confirmando() {
           }}
         >
           <Image
-            src={comarch}
+            src={juniper}
             alt="mantis"
             layout="fixed"
             width={matchDownSM ? 460 : 475}
@@ -44,12 +45,12 @@ export default function Confirmando() {
       <Grid item xs={6}>
         <MainCard sx={{ height: '100%', textAlign: 'center', borderRadius: '25px' }}>
           <Typography variant="h6" style={{ fontSize: '17' }}>
-            <strong>  Procedimentos </strong>
+            <strong> Procedimentos </strong>
           </Typography>
           <hr></hr>
           <br></br>
           <Typography variant="body1" style={{ fontSize: '17' }}>
-            Clique em ok e mande a senha no e-mail <strong color='red'>COORPORATIVO</strong> da Tripulante/Terceira.
+            Clique em ok e mande a senha no e-mail <strong color="red">COORPORATIVO</strong> da Tripulante/Terceira.
           </Typography>
           <br></br>
           <Typography>
