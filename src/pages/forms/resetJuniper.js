@@ -27,7 +27,7 @@ const JuniperReset = () => {
             <Button
               variant="contained"
               color="secondary"
-              onClick={() => router.replace('/forms/words')}
+              onClick={() => router.replace('/forms/juniper')}
               style={{
                 textTransform: 'none',
                 borderRadius: 8,
@@ -46,7 +46,7 @@ const JuniperReset = () => {
             <Button
               variant="contained"
               color="primary"
-              onClick={() => router.replace('/forms/words')}
+              onClick={() => router.replace('/forms/juniper')}
               style={{
                 textTransform: 'none',
                 borderRadius: 8,
