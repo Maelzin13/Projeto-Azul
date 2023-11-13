@@ -50,8 +50,8 @@ export default function AceesJuniper() {
           <hr></hr>
           <Typography variant="body1" style={{ fontSize: '17px' }}>
             Acesse o sistema através do link:{' '}
-            <a href="https://abrir.link/QGRpL" target="_blank" rel="noopener noreferrer">
-              Comarch
+            <a href="https://intranet.azulviagens.com.br/intranet/login.aspx" target="_blank" rel="noopener noreferrer">
+              Juniper
             </a>
           </Typography>
           <br />
