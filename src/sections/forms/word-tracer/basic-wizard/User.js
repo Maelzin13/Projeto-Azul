@@ -42,9 +42,9 @@ export default function User() {
       {/* Right side */}
       <Grid item xs={6}>
         <MainCard title="<strong><strong>Procedimentos</strong></strong>" sx={{ height: '100%' }}>
-          <Typography variant="h6"><strong><strong>Procedimentos</strong></strong></Typography>
+          <Typography variant="h6"><strong>Procedimentos</strong></Typography>
           <Typography variant="caption" color="textSecondary">
-            This is card description
+            Aqui coloca a descricao do wordtracer
           </Typography>
         </MainCard>
       </Grid>

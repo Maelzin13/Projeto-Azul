@@ -41,10 +41,10 @@ export default function Reset() {
 
       {/* Right side */}
       <Grid item xs={6}>
-        <MainCard title="<strong><strong>Procedimentos</strong></strong>" sx={{ height: '100%' }}>
+        <MainCard title="Procedimentos" sx={{ height: '100%' }}>
           <Typography variant="h6"><strong><strong>Procedimentos</strong></strong></Typography>
           <Typography variant="caption" color="textSecondary">
-            This is card description
+            Aqui coloca os procedimentos do wordtracer 3
           </Typography>
         </MainCard>
       </Grid>
