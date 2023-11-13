@@ -5,6 +5,7 @@ import Image from 'next/legacy/image';
 import { useTheme } from '@mui/material/styles';
 
 const word = '/assets/images/maintenance/Wordtracer/passo_2.png';
+
 export default function ScharcUser() {
   const theme = useTheme();
   const matchDownSM = useMediaQuery(theme.breakpoints.down('sm'));

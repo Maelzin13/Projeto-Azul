@@ -4,7 +4,8 @@ import { useMediaQuery } from '../../../../../node_modules/@mui/material/index';
 import Image from 'next/legacy/image';
 import { useTheme } from '@mui/material/styles';
 
-const comarch = '/assets/images/maintenance/Comarch/passo_3.png';
+const juniper = '/assets/images/maintenance/Junipper/JuniperResetarAcesso/passo_3.png';
+
 export default function User() {
   const theme = useTheme();
   const matchDownSM = useMediaQuery(theme.breakpoints.down('sm'));
@@ -26,7 +27,7 @@ export default function User() {
           }}
         >
           <Image
-            src={comarch}
+            src={juniper}
             alt="mantis"
             layout="fixed"
             width={matchDownSM ? 460 : 475}
@@ -44,7 +45,9 @@ export default function User() {
       <Grid item xs={6}>
         <MainCard sx={{ height: '100%', textAlign: 'center', borderRadius: '25px' }}>
           <Typography variant="h6" style={{ fontSize: '20px' }}>
-            <strong><strong>Procedimentos</strong></strong>
+            <strong>
+              <strong>Procedimentos</strong>
+            </strong>
           </Typography>
           <hr></hr>
           <Typography variant="body1">
@@ -53,7 +56,6 @@ export default function User() {
             <br></br>
             <strong>Tripulante:</strong> RE ou login ou nome completo.<br></br>
             <strong>Terceiro:</strong> CPF, Login ou nome completo.
-            
           </Typography>
           <br />
           <Typography>Selecione o link Status no usuário que se deseja Resetar</Typography>

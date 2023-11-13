@@ -5,6 +5,7 @@ import Image from 'next/legacy/image';
 import { useTheme } from '@mui/material/styles';
 
 const word = '/assets/images/maintenance/Wordtracer/passo_1.png';
+
 export default function AceesWord() {
   const theme = useTheme();
   const matchDownSM = useMediaQuery(theme.breakpoints.down('sm'));

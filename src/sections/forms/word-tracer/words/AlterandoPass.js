@@ -5,6 +5,7 @@ import Image from 'next/legacy/image';
 import { useTheme } from '@mui/material/styles';
 
 const word = '/assets/images/maintenance/Wordtracer/passo_4.png';
+
 export default function AlterandoPass() {
   const theme = useTheme();
   const matchDownSM = useMediaQuery(theme.breakpoints.down('sm'));
