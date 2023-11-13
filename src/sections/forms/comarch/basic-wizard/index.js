@@ -94,12 +94,12 @@ const Comarch = () => {
             <Stack direction="row" justifyContent={activeStep !== 0 ? 'space-between' : 'flex-end'}>
               {activeStep !== 0 && (
                 <Button variant="contained" color="success" onClick={handleBack} sx={{ my: 3, ml: 1 }}>
-                  Back
+                  Voltar
                 </Button>
               )}
               <AnimateButton>
                 <Button variant="contained" color="success" onClick={handleNext} sx={{ my: 3, ml: 1 }}>
-                  {activeStep === steps.length - 1 ? 'Place order' : 'Next'}
+                  {activeStep === steps.length - 1 ? 'Finalizar Procedimento' : 'Proximo'}
                 </Button>
               </AnimateButton>
             </Stack>

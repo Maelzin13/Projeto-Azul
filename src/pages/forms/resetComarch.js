@@ -6,6 +6,7 @@ import Page from 'components/Page';
 import { useRouter } from 'next/router';
 import { styled } from '@mui/system';
 
+
 const Background = styled('div')({
   backgroundImage: "url('/assets/images/maintenance/img1Borrada.png')",
   backgroundSize: 'cover',
@@ -14,7 +15,8 @@ const Background = styled('div')({
   minHeight: '100vh', // Cobrir toda a altura da tela
   display: 'flex',
   alignItems: 'center',
-  justifyContent: 'center'
+  justifyContent: 'center',
+  borderRadius: '10px', // Arredondamento de bordas da imagem de fundo
 });
 
 const ComarchReset = () => {

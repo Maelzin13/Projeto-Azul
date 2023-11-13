@@ -117,7 +117,7 @@ export default function HorizontalNonLinearStepper() {
             </StepWrapper>
             <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
               <Button variant="outlined" disabled={activeStep === 0} onClick={handleBack} sx={{ mr: 1 }}>
-                Back
+                Voltar
               </Button>
               <Box sx={{ flex: '1 1 auto' }} />
               {activeStep !== steps.length &&

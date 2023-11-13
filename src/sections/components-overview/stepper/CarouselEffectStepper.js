@@ -108,7 +108,7 @@ function CarouselEffectStepper() {
             disabled={activeStep === 0}
             startIcon={theme.direction === ThemeDirection.RTL ? <RightOutlined /> : <LeftOutlined />}
           >
-            Back
+            Voltar
           </Button>
         }
       />

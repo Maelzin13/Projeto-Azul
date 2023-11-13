@@ -81,7 +81,7 @@ const Juniper = () => {
             <Stack direction="row" justifyContent={activeStep !== 0 ? 'space-between' : 'flex-end'}>
               {activeStep !== 0 && (
                 <Button variant="contained" color="success" onClick={handleBack} sx={{ my: 3, ml: 1 }}>
-                  Back
+                  
                 </Button>
               )}
               <AnimateButton>
