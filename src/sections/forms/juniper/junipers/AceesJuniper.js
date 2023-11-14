@@ -5,6 +5,7 @@ import Image from 'next/legacy/image';
 import { useMediaQuery } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 
+
 const juniper = '/assets/images/maintenance/Junipper/JuniperResetarAcesso/passo_1.png';
 
 export default function AceesJuniper() {
