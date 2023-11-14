@@ -63,10 +63,8 @@ export default function AceesJuniper() {
       </Grid>
 
       {/* Right side */}
-      <Grid
-        item
-        xs={6}
-        style={{
+      <Grid item xs={6}
+      style={{
           textAlign: 'center',
           borderRadius: hoveredRight ? '15px' : '25px',
           transform: hoveredRight ? 'scale(1.05)' : 'scale(1)',

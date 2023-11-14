@@ -61,7 +61,16 @@ export default function AceesComarch() {
       </Grid>
 
       {/* Right side */}
-      <Grid item xs={6}>
+      <Grid item xs={6}
+      style={{
+          textAlign: 'center',
+          borderRadius: hoveredRight ? '15px' : '25px',
+          transform: hoveredRight ? 'scale(1.05)' : 'scale(1)',
+          transition: 'transform 0.3s ease-in-out, border-radius 0.3s ease-in-out'
+        }}
+        onMouseEnter={handleMouseEnterRight}
+        onMouseLeave={handleMouseLeaveRight}
+      >
         <MainCard sx={{ height: '100%', textAlign: 'center', borderRadius: '25px' }}>
           <Typography variant="h6" style={{ fontSize: '17px' }}>
             <strong>Procedimentos</strong>
@@ -70,7 +79,7 @@ export default function AceesComarch() {
           <Typography variant="body1" style={{ fontSize: '17px' }}>
             Acesse o sistema através do link:{' '}
             <a href="https://intranet.azulviagens.com.br/intranet/login.aspx" target="_blank" rel="noopener noreferrer">
-              Juniper
+              Comarch
             </a>
           </Typography>
           <br />
