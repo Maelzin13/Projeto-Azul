@@ -52,9 +52,7 @@ export default function User() {
           <hr></hr>
           <Typography variant="body1">
             <br></br>
-            <br></br>
-            <strong>Tripulante:</strong> RE ou login ou nome completo.<br></br>
-            <strong>Terceiro:</strong> CPF, Login ou nome completo.
+            <h3>Digitar o LOGIN do user ou o NOME e clicar em filtrar.</h3>
           </Typography>
           <br />
         </MainCard>

@@ -55,7 +55,18 @@ export default function AceesJuniper() {
             </a>
           </Typography>
           <br />
-          <Typography style={{ fontSize: '17px' }}>Digite o login e a senha no campo &quot;BA&quot;.</Typography>
+          <Typography style={{ fontSize: '17px' }}>
+            <li>
+              <strong>
+                Usuario: 
+              </strong> Login Individual
+            </li>
+            <li>
+              <strong>
+                Clave: 
+              </strong> Senha Individual
+            </li>
+          </Typography>
         </MainCard>
       </Grid>
     </Grid>
