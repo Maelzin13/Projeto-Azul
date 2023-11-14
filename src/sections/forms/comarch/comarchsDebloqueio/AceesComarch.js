@@ -61,8 +61,10 @@ export default function AceesComarch() {
       </Grid>
 
       {/* Right side */}
-      <Grid item xs={6}
-      style={{
+      <Grid
+        item
+        xs={6}
+        style={{
           textAlign: 'center',
           borderRadius: hoveredRight ? '15px' : '25px',
           transform: hoveredRight ? 'scale(1.05)' : 'scale(1)',
@@ -85,14 +87,10 @@ export default function AceesComarch() {
           <br />
           <Typography style={{ fontSize: '17px' }}>
             <li>
-              <strong>
-                Usuario:
-              </strong> Login individual.
+              <strong>Usuario:</strong> Login individual.
             </li>
             <li>
-              <strong>
-                Clave:
-              </strong> Senha individual.
+              <strong>Clave:</strong> Senha individual.
             </li>
           </Typography>
         </MainCard>
