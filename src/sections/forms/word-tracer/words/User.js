@@ -84,7 +84,7 @@ export default function User() {
           <br />
           <Typography variant="body1">
             <li>
-              A buscar o Tripulante/Terceiro pode ser realizada pelo <strong>User ID (login)</strong>, ou pelo primeiro nome{' '}
+              A buscar o Tripulante/Terceiro pode ser realizada pelo <strong>User ID ou RE</strong>, ou pelo primeiro nome{' '}
               <strong>(First Name)</strong> ou ultimo nome <strong>(Last name)</strong>. Digitando os dados clicar em{' '}
               <strong>Submit.</strong>
             </li>
