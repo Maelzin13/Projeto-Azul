@@ -189,38 +189,6 @@ const MegaMenuSection = () => {
                                   <ListItemText primary="Login" />
                                 </ListItemButton>
                               </NextLink>
-                              <NextLink href="/auth/register" passHref legacyBehavior>
-                                <ListItemButton disableRipple component={Link} target="_blank">
-                                  <ListItemIcon>
-                                    <Dot size={7} color="secondary" variant="outlined" />
-                                  </ListItemIcon>
-                                  <ListItemText primary="Register" />
-                                </ListItemButton>
-                              </NextLink>
-                              <NextLink href="/auth/reset-password" passHref legacyBehavior>
-                                <ListItemButton disableRipple component={Link} target="_blank">
-                                  <ListItemIcon>
-                                    <Dot size={7} color="secondary" variant="outlined" />
-                                  </ListItemIcon>
-                                  <ListItemText primary="Reset Password" />
-                                </ListItemButton>
-                              </NextLink>
-                              <NextLink href="/auth/forgot-password" passHref legacyBehavior>
-                                <ListItemButton disableRipple component={Link} target="_blank">
-                                  <ListItemIcon>
-                                    <Dot size={7} color="secondary" variant="outlined" />
-                                  </ListItemIcon>
-                                  <ListItemText primary="Forgot Password" />
-                                </ListItemButton>
-                              </NextLink>
-                              <NextLink href="/auth/code-verification" passHref legacyBehavior>
-                                <ListItemButton disableRipple component={Link} target="_blank">
-                                  <ListItemIcon>
-                                    <Dot size={7} color="secondary" variant="outlined" />
-                                  </ListItemIcon>
-                                  <ListItemText primary="Verification Code" />
-                                </ListItemButton>
-                              </NextLink>
                             </List>
                           </Grid>
                           <Grid item xs={4}>
