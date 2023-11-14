@@ -12,7 +12,7 @@ import { DEFAULT_PATH } from 'config';
 const LogoSection = ({ sx, to }) => (
   <NextLink href={!to ? DEFAULT_PATH : to} passHref legacyBehavior>
     <ButtonBase disableRipple sx={sx}>
-      <img src="/assets/images/logo.png" alt="Your Logo Alt Text" style={{ width: '50%', height: 'auto' }} />
+      {/* <img src="/assets/images/logo.png" alt="Your Logo Alt Text" style={{ width: '50%', height: 'auto' }} /> */}
     </ButtonBase>
   </NextLink>
 );

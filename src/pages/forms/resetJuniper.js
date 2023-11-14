@@ -3,23 +3,25 @@ import { Grid, Button } from '@mui/material';
 import NextLink from 'next/link';
 import Layout from 'layout';
 import { styled } from '@mui/system';
+
 const Background = styled('div')({
-  backgroundImage: "url('/assets/images/maintenance/img1Borrada.png')",
+  backgroundImage: "url('/assets/images/maintenance/img3Borrada.png')",
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'center',
   minHeight: '100vh',
   display: 'flex',
+  flexDirection: 'column',
   alignItems: 'center',
-  justifyContent: 'center',
-  borderRadius: '10px'
+  justifyContent: 'flex-start',
+  borderRadius: '90px'
 });
 
 const JuniperReset = () => {
   return (
     <Background>
       <Grid container justifyContent="center" alignItems="center" style={{ minHeight: '100vh' }}>
-        <Grid item xs={12} md={6} lg={7} container justifyContent="center" spacing={2} style={{ marginBottom: '1200px' }}>
+        <Grid item xs={12} md={6} lg={7} container justifyContent="center" spacing={2}>
           <Grid item>
             <NextLink href="/forms/juniper" passHref legacyBehavior>
               <Button

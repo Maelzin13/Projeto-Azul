@@ -3,6 +3,7 @@ import { Grid, Button } from '@mui/material';
 import Layout from 'layout';
 import NextLink from 'next/link';
 import { styled } from '@mui/system';
+
 const Background = styled('div')({
   backgroundImage: "url('/assets/images/maintenance/img2Borrada.png')",
   backgroundSize: 'cover',
@@ -10,16 +11,17 @@ const Background = styled('div')({
   backgroundPosition: 'center',
   minHeight: '100vh',
   display: 'flex',
+  flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
-  borderRadius: '10px'
+  borderRadius: '90px'
 });
 
 const WordTracerReset = () => {
   return (
     <Background>
       <Grid container justifyContent="center" alignItems="center" style={{ minHeight: '100vh' }}>
-        <Grid item xs={12} md={6} lg={7} container justifyContent="center" spacing={2} style={{ marginBottom: '1200px' }}>
+        <Grid item xs={12} md={6} lg={7} container justifyContent="center" spacing={2}>
           <Grid item>
             <NextLink href="/forms/words" passHref legacyBehavior>
               <Button

@@ -12,12 +12,8 @@ import {
   Box,
   useMediaQuery,
   Button,
-  Checkbox,
-  Divider,
-  FormControlLabel,
   FormHelperText,
   Grid,
-  Link,
   InputAdornment,
   InputLabel,
   OutlinedInput,
@@ -38,13 +34,11 @@ import AnimateButton from 'components/@extended/AnimateButton';
 // assets
 import { EyeOutlined, EyeInvisibleOutlined } from '@ant-design/icons';
 
-const Google = '/assets/images/icons/google.svg';
-
 // ============================|| AWS CONNITO - LOGIN ||============================ //
 
 const AuthLogin = ({ providers, csrfToken }) => {
   const matchDownSM = useMediaQuery((theme) => theme.breakpoints.down('sm'));
-  const [checked, setChecked] = React.useState(false);
+
   const [capsWarning, setCapsWarning] = React.useState(false);
 
   const { data: session } = useSession();
@@ -164,27 +158,6 @@ const AuthLogin = ({ providers, csrfToken }) => {
                 </Stack>
               </Grid>
 
-              <Grid item xs={12} sx={{ mt: -1 }}>
-                <Stack direction="row" justifyContent="space-between" alignItems="center" spacing={2}>
-                  <FormControlLabel
-                    control={
-                      <Checkbox
-                        checked={checked}
-                        onChange={(event) => setChecked(event.target.checked)}
-                        name="checked"
-                        color="primary"
-                        size="small"
-                      />
-                    }
-                    label={<Typography variant="h6">Keep me sign in</Typography>}
-                  />
-                  <NextLink href={session ? '/auth/forgot-password' : '/forgot-password'} passHref legacyBehavior>
-                    <Link variant="h6" color="text.primary">
-                      Forgot Password?
-                    </Link>
-                  </NextLink>
-                </Stack>
-              </Grid>
               {errors.submit && (
                 <Grid item xs={12}>
                   <FormHelperText error>{errors.submit}</FormHelperText>
@@ -201,9 +174,7 @@ const AuthLogin = ({ providers, csrfToken }) => {
           </form>
         )}
       </Formik>
-      <Divider sx={{ mt: 2 }}>
-        <Typography variant="caption"> Login with</Typography>
-      </Divider>
+
       {providers && (
         <Stack
           direction="row"
@@ -215,23 +186,6 @@ const AuthLogin = ({ providers, csrfToken }) => {
             if (provider.id === 'login' || provider.id === 'register') {
               return;
             }
-            return (
-              <Box key={provider.name} sx={{ width: '100%' }}>
-                {provider.id === 'google' && (
-                  <AnimateButton>
-                    <Button
-                      variant="outlined"
-                      color="secondary"
-                      fullWidth={!matchDownSM}
-                      startIcon={<Image src={Google} alt="Twitter" width={16} height={16} />}
-                      onClick={() => signIn(provider.id, { callbackUrl: DEFAULT_PATH })}
-                    >
-                      {!matchDownSM && 'Google'}
-                    </Button>
-                  </AnimateButton>
-                )}
-              </Box>
-            );
           })}
         </Stack>
       )}

@@ -24,7 +24,6 @@ import {
 } from '@mui/material';
 import { DEFAULT_PATH, ThemeMode } from 'config';
 import IconButton from 'components/@extended/IconButton';
-import AnimateButton from 'components/@extended/AnimateButton';
 import Logo from 'components/logo';
 import { MenuOutlined, LineOutlined } from '@ant-design/icons';
 
@@ -99,19 +98,6 @@ const Header = ({ handleDrawerOpen, layout = 'landing', ...others }) => {
                   </Link>
                 </NextLink>
               )}
-              <Box sx={{ display: 'inline-block' }}>
-                <AnimateButton>
-                  <Button
-                    component={Link}
-                    href="https://mui.com/store/items/mantis-react-admin-dashboard-template/"
-                    disableElevation
-                    color="primary"
-                    variant="contained"
-                  >
-                    Purchase Now
-                  </Button>
-                </AnimateButton>
-              </Box>
             </Stack>
             <Box
               sx={{

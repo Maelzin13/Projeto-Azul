@@ -11,6 +11,7 @@ const Background = styled('div')({
   backgroundPosition: 'center',
   minHeight: '100vh',
   display: 'flex',
+  flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
   borderRadius: '10px'
@@ -20,25 +21,8 @@ const ComarchReset = () => {
   return (
     <Background>
       <Grid container justifyContent="center" alignItems="center" style={{ minHeight: '100vh' }}>
-        <Grid item xs={12} md={6} lg={7} container justifyContent="center" spacing={2} style={{ marginBottom: '1200px' }}>
+        <Grid item xs={12} md={6} lg={7} container justifyContent="center" spacing={2}>
           <Grid item>
-            {/* <Button
-              variant="contained"
-              color="secondary"
-              onClick={() => router.replace('/forms/comarch')}
-              style={{
-                textTransform: 'none',
-                borderRadius: 8,
-                padding: '10px 20px',
-                backgroundColor: '#F44336',
-                color: '#FFFFFF',
-                '&:hover': {
-                  backgroundColor: '#D32F2F'
-                }
-              }}
-            >
-              Resetar
-            </Button> */}
             <NextLink href="/forms/comarch" passHref legacyBehavior>
               <Button
                 variant="contained"
