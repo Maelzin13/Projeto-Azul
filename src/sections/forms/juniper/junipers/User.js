@@ -81,7 +81,16 @@ export default function User() {
           <hr></hr>
           <Typography variant="body1">
             <br></br>
-            <h3>Digitar o LOGIN do user ou o NOME e clicar em filtrar.</h3>
+            <li>
+              <strong>
+                Reset Tripulante: 
+              </strong> Pesquisa com RE 
+            </li>
+            <li>
+              <strong>
+                Reset Terceiro: 
+              </strong> Login de rede
+            </li>
           </Typography>
           <br />
         </MainCard>
