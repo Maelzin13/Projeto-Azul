@@ -13,8 +13,8 @@ const Background = styled('div')({
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
-  justifyContent: 'center',
-  borderRadius: '10px'
+  justifyContent: 'flex-start',
+  borderRadius: '90px'
 });
 
 const ComarchReset = () => {
