@@ -11,7 +11,6 @@ import ScharcUser from './ScharcUser';
 import User from './User';
 import AlterandoPass from './AlterandoPass';
 import Reset from './Reset';
-import Confirmando from './Confirm';
 
 // step options
 const steps = ['Acess Juniper', 'Encontrando user', 'Procurando User', 'Selecionando User', 'Reset do password'];
@@ -28,8 +27,7 @@ function getStepContent(step) {
       return <AlterandoPass />;
     case 4:
       return <Reset />;
-    case 5:
-      return <Confirmando />;
+
     default:
       throw new Error('Unknown step');
   }

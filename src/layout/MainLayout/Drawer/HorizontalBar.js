@@ -38,11 +38,11 @@ const CustomAppBar = () => {
     <ElevationScroll>
       <AppBar
         sx={{
-          top: 60,
+          top: 1,
           bgcolor: theme.palette.background.paper,
           width: '100%',
           height: 62,
-          justifyContent: 'center',
+          justifyContent: 'flex-start',
           borderTop: `1px solid ${theme.palette.divider}`,
           borderBottom: `1px solid ${theme.palette.divider}`,
           zIndex: 1098,
@@ -50,7 +50,7 @@ const CustomAppBar = () => {
         }}
       >
         <Container maxWidth={container ? 'xl' : false}>
-          <Box sx={{ display: 'flex', alignItems: 'center' }}>
+          <Box sx={{ display: 'flex', alignItems: 'flex-start' }}>
             <Navigation />
           </Box>
         </Container>

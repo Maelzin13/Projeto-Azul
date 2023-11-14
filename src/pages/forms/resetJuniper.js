@@ -42,26 +42,6 @@ const JuniperReset = () => {
               </Button>
             </NextLink>
           </Grid>
-          <Grid item>
-            <NextLink href="/forms/juniperDesbloqueio" passHref legacyBehavior>
-              <Button
-                variant="contained"
-                color="primary"
-                style={{
-                  textTransform: 'none',
-                  borderRadius: 8,
-                  padding: '10px 20px',
-                  backgroundColor: '#2196F3',
-                  color: '#FFFFFF',
-                  '&:hover': {
-                    backgroundColor: '#1565C0'
-                  }
-                }}
-              >
-                Desbloquear
-              </Button>
-            </NextLink>
-          </Grid>
         </Grid>
       </Grid>
     </Background>
